@@ -1,0 +1,16 @@
+.btn {
+  background-color: color( main-color );
+  text-align: center;
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: 1px solid color( main-color );
+  @include transition-ease;
+
+  @include on-event {
+    background-color: #fff;
+    color: color( main-color );
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.25);
+  }
+}

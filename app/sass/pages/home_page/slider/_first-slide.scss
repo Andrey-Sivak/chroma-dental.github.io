@@ -1,0 +1,39 @@
+.slider__item {
+
+  &.first {
+    background-image: url("../../../../img/home-page/slider/first-slide.jpg");
+  }
+
+  &.first &_content {
+    position: absolute;
+    left: 0;
+    top: 10.33rem;
+  }
+
+  &.first &_caption {
+    font-weight: 700;
+    text-shadow: 0 4px 14px rgba(0, 0, 0, 0.52);
+    color: #fff;
+    font-size: 12.27rem;
+    line-height: 1.25em;
+  }
+
+  &.first &_subcaption {
+    margin-top: -0.55em;
+    color: #fff;
+    text-shadow: 0 4px 16px rgba(0, 0, 0, 0.54);
+    font-weight: 600;
+    font-size: 6.6rem;
+    line-height: 1.25em;
+    margin-bottom: .3em;
+  }
+  
+  &.first &_text {
+    color: #000;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    line-height: 1.21em;
+  }
+}

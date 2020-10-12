@@ -1,0 +1,81 @@
+@import 'slider/first-slide';
+
+.slider {
+  width: 100%;
+  position: relative;
+
+  &__wrap {
+    //@include flex();
+  }
+
+  &__item {
+    height: 48.2rem;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    & .container {
+      position: relative;
+    }
+  }
+
+  &__offer {
+    position: absolute;
+    right: 13.33rem;
+    bottom: -54px;
+    background-color: #fff;
+    padding: 2.66rem 3.13rem 2rem;
+    max-width: 22rem;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+
+    &_text {
+      font-size: 2rem;
+      font-weight: 500;
+      margin-bottom: 33px;
+      text-align: center;
+      line-height: 2.5rem;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+
+    &_btn {
+      width: 100%;
+      padding: 24px 0;
+      letter-spacing: .08em;
+      font-size: .86rem;
+      line-height: 1.07rem;
+    }
+  }
+
+  &__dots {
+    max-width: 160px;
+    width: 100%;
+
+
+    position: absolute;
+    @include flex( $a-i: center, $j-c: space-between );
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 1rem;
+  }
+
+  &__dot {
+    background-color: #fff;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    box-sizing: content-box;
+
+    @include on-event {
+      border: 3px solid color( main-color );
+      margin: 0 -1.5px;
+    }
+
+    &.active {
+      border: 3px solid color( main-color );
+    }
+  }
+}
