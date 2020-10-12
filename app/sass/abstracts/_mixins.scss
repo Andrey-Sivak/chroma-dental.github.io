@@ -89,3 +89,7 @@
   bottom: $bottom;
   left: $left;
 }
+
+@mixin transition-ease {
+  transition: all ease-in-out .3s;
+}

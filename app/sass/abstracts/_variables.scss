@@ -5,10 +5,13 @@ $breakpoints: (
 );
 
 $colors: (
-        main-color: null,
+        main-color: #6F9890,
+        secondary-color: #C4C4C4
 );
 
 $z-layers: (
         bottomless-pit: -9999,
         default: 1,
 );
+
+$container: 81.33rem;

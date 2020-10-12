@@ -1,0 +1,48 @@
+.menu {
+  @include flex( $j-c:space-between );
+  user-select: none;
+
+  &__item {
+    font-size: 1rem;
+    letter-spacing: .1em;
+    line-height: 1.2rem;
+    text-transform: uppercase;
+
+    &.active {
+
+      & .menu__item_link {
+
+        &:before {
+          max-width: 100%;
+        }
+      }
+    }
+    
+    &_link {
+      color: #000;
+      position: relative;
+      display: block;
+      padding: .66rem 0;
+
+      &:before {
+        $height: 2px;
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: $height;
+        background-color: #000;
+        left: 50%;
+        bottom: ($height + 5px);
+        max-width: 0;
+        transform: translateX(-50%);
+        @include transition-ease;
+      }
+
+      @include on-event {
+        &:before {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}

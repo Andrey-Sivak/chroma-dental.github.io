@@ -1,0 +1,54 @@
+@import '../components/menu';
+
+.header {
+  background-color: color( main-color );
+  height: 4.3rem;
+  @include flex-center();
+
+  &__wrap {
+    height: 100%;
+    width: 100%;
+    @include flex( $j-c: space-between, $a-i: center );
+  }
+
+  &__logo {
+    display: block;
+    max-width: 16.73rem;
+    max-height: 2.8rem;
+    width: 100%;
+    height: auto;
+    @include transition-ease;
+
+    @include on-event {
+      transform: scale(1.05);
+    }
+
+    &_img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  &__menu {
+    max-width: 30rem;
+    width: 100%;
+  }
+
+  &__btn {
+    background-color: #fff;
+    height: 100%;
+    @include flex-center();
+    padding: 0 21px;
+    text-transform: uppercase;
+    font-size: .8rem;
+    line-height: 1rem;
+    letter-spacing: 0.08em;
+    font-weight: 500;
+    color: #000;
+    @include transition-ease;
+
+    @include on-event {
+      box-shadow: inset 0 0 7px 0 rgba(0,0,0,.3);
+    }
+  }
+}
