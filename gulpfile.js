@@ -44,8 +44,8 @@ function styles() {
 		.pipe(postcss([ autoprefixer() ]))
         .pipe(rename('all.css'))
 		.pipe(sourcemaps.write('.'))
-		.pipe(replace('../../', '../'))
-		.pipe(gulp.dest('./dist/css'))
+		.pipe(replace(/([../]{3,})/g, '../'))
+		.pipe(gulp.dest( dist ))
 		.pipe(browserSync.stream());
 }
 
