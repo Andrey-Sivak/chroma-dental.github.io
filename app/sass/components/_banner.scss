@@ -1,0 +1,75 @@
+.banner {
+  background-color: #fff;
+  padding: 24px;
+
+  & .corner {
+    position: absolute;
+    background-color: #fff;
+    width: 41px;
+    height: 23px;
+    z-index: 2;
+
+    &:before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: #000;
+    }
+  }
+
+  &__rt-top {
+    right: -14px;
+    top: -6px;
+    transform: rotate(225deg);
+  }
+
+  &__lt-top {
+    left: -14px;
+    top: -6px;
+    transform: rotate(135deg);
+  }
+
+  &__rt-bottom {
+    right: -14px;
+    bottom: -6px;
+    transform: rotate(315deg);
+  }
+
+  &__lt-bottom {
+    left: -14px;
+    bottom: -6px;
+    transform: rotate(45deg);
+  }
+
+  &__wrap {
+    width: 100%;
+    position: relative;
+    border: 1px solid #000;
+    z-index: 1;
+  }
+
+  &__caption {
+    text-transform: capitalize;
+    font-weight: 300;
+    font-size: 2.53rem;
+    line-height: 1.21em;
+  }
+
+  &__text {
+    font-size: .93rem;
+    letter-spacing: 0.02em;
+    line-height: 1.5em;
+    color: #222425;
+  }
+
+  &__link {
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    text-decoration: underline;
+    font-size: 1.06rem;
+    line-height: 1.19em;
+    color: #000;
+  }
+}
