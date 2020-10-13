@@ -62,20 +62,28 @@
 
   &__dot {
     background-color: #fff;
-    width: 15px;
-    height: 15px;
+    display: block;
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
-    border: none;
     cursor: pointer;
-    box-sizing: content-box;
 
-    @include on-event {
-      border: 3px solid color( main-color );
-      margin: 0 -1.5px;
-    }
+    &-wrap {
+      background-color: transparent;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      cursor: pointer;
+      @include flex-center();
+      @include transition-ease;
 
-    &.active {
-      border: 3px solid color( main-color );
+      &.active {
+        background-color: color( main-color );
+      }
+
+      @include on-event {
+        background-color: color( main-color );
+      }
     }
   }
 }
