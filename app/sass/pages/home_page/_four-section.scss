@@ -1,0 +1,45 @@
+.four-section {
+  height: 40rem;
+  background-image: url("../../../img/home-page/four-section-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  & .banner {
+    max-width: 48rem;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: -6.33rem;
+
+    &__wrap {
+      padding: 1.47rem 1.33rem .33rem 4.53rem;
+    }
+  }
+
+  &__list {
+    width: 100%;
+    @include flex( $j-c: space-between );
+    margin-top: 2.13rem;
+
+    &_item {
+      width: 30%;
+      margin-bottom: 2.2rem;
+
+      &-img {
+        max-height: 3.2rem;
+        max-width: 2.66rem;
+      }
+
+      &-text {
+        margin-top: 0.53rem;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: .93rem;
+        line-height: 1.21em;
+      }
+    }
+  }
+
+}
