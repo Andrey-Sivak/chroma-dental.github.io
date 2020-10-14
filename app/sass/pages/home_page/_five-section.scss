@@ -50,6 +50,24 @@
     line-height: 1.21em;
     left: calc( 50% + 22px );
     top: 75.1%;
+    $border-color: rgba( 133, 133, 133, 0.6 );
+    text-shadow:
+            -0 -1px 0 $border-color,
+            0 -1px 0 $border-color,
+            -0 1px 0 $border-color,
+            0 1px 0 $border-color,
+            -1px -0 0 $border-color,
+            1px -0 0 $border-color,
+            -1px  0 0 $border-color,
+            1px  0 0 $border-color,
+            -1px -1px 0 $border-color,
+            1px -1px 0 $border-color,
+            -1px  1px 0 $border-color,
+            1px  1px 0 $border-color,
+            -1px -1px 0 $border-color,
+            1px -1px 0 $border-color,
+            -1px  1px 0 $border-color,
+            1px  1px 0 $border-color;
   }
 
   &__img {
