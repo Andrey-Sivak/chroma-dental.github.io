@@ -46,3 +46,50 @@
     }
   }
 }
+
+.drop {
+  position: relative;
+
+  &:hover &__menu {
+    transform: translateX(0);
+    max-height: 1000px;
+    opacity: 1;
+  }
+
+  &__menu {
+    transform: translateX(-50px);
+    max-height: 0;
+    opacity: 0;
+    overflow: auto;
+    font-size: 0.85rem;
+    width: 250px;
+    position: absolute;
+    left: -10px;
+    z-index: 3;
+    @include transition-ease;
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+
+    &_item {
+      background-color: color( main-color );
+      @include transition-ease;
+      display: block;
+
+      &:hover {
+        background-color: lighten( color( main-color ), 5% );
+      }
+
+      &:not(:last-child) {
+        border-bottom: 1px solid #000;
+      }
+    }
+
+    &_link {
+      color: #000;
+      display: block;
+      padding: 10px 5px 10px 10px;
+    }
+  }
+}
