@@ -50,6 +50,28 @@
 .drop {
   position: relative;
 
+  &:after {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 1px;
+    background-color: #000;
+    top: 50%;
+    right: -13px;
+    transform: translateY(-50%) rotate(-130.6deg);
+  }
+
+  &:before {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 1px;
+    background-color: #000;
+    top: 50%;
+    right: -19px;
+    transform: translateY(-50%) rotate(-44.42deg);
+  }
+
   &:hover &__menu {
     transform: translateX(0);
     max-height: 1000px;
@@ -90,6 +112,7 @@
       color: #000;
       display: block;
       padding: 10px 5px 10px 10px;
+      text-transform: capitalize;
     }
   }
 }

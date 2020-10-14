@@ -1,0 +1,112 @@
+.footer {
+  background-color: #000;
+  padding: 27px 0;
+  color: #fff;
+
+  &__content {
+    margin-left: 4.5vw;
+  }
+
+  &__header {
+    @include flex( $a-i: center );
+    margin-bottom: 2rem;
+
+    &_logo {
+      max-width: 255px;
+      @include transition-ease;
+      margin-right: 5.2rem;
+
+      @include on-event {
+        transform: scale(1.05);
+      }
+
+      &-img {
+        width: 100%;
+      }
+    }
+    
+    &_link {
+      color: #fff;
+      letter-spacing: 0.1em;
+      font-size: 1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-right: 3.33rem;
+
+      @include on-event {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__main {
+    @include flex;
+  }
+
+  &__address {
+    max-width: 255px;
+    font-size: .93rem;
+    text-transform: capitalize;
+    margin-right: 5.2rem;
+
+    & p {
+      margin-bottom: .8rem;
+      width: 100%;
+    }
+  }
+
+  &__services {
+    @include flex;
+
+    &_caption {
+      letter-spacing: 0.1em;
+      font-size: 1rem;
+      margin-right: 1.6rem;
+      text-transform: uppercase;
+    }
+
+    &_wrap {
+      max-width: 37rem;
+      @include flex();
+    }
+
+    &_item {
+      font-size: .93rem;
+      color: #fff;
+      text-transform: capitalize;
+      line-height: 1.21em;
+      font-weight: 400;
+      margin-bottom: 3px;
+
+      &:not(:last-child) {
+        border-right: 1px solid #fff;
+        margin-right: 10px;
+        padding-right: 10px;
+      }
+
+      @include on-event {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__links {
+    @include flex-center;
+
+    &_wrap {
+      @include flex();
+    }
+
+    &_link {
+      font-size: .8rem;
+      color: #fff;
+      text-decoration: underline;
+      text-transform: capitalize;
+      padding: 0 5px;
+
+      @include on-event {
+        text-decoration: none;
+      }
+    }
+  }
+}
