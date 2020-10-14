@@ -1,0 +1,32 @@
+.six-section {
+  padding: 101px 0;
+  text-align: center;
+  line-height: 1;
+
+  &__caption {
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
+
+    &:not(:first-of-type) {
+      margin-top: 2.67rem;
+    }
+  }
+
+  &__text-wrap {
+    margin: 0 auto 2rem;
+    max-width: 24.33rem;
+  }
+
+  &__text {
+    font-size: 1.33rem;
+    line-height: 1.2em;
+  }
+
+  &__btn {
+    margin: 64px auto 0;
+    max-width: 313px;
+    font-size: .8rem;
+    padding: 18px 0;
+    letter-spacing: 0.14em;
+  }
+}
