@@ -27,6 +27,7 @@
   }
 
   &__content {
+    font-family: $roboto;
     @include flex( $j-c: space-between );
     width: 100%;
   }

@@ -11,6 +11,7 @@
   }
 
   &.first &_caption {
+    font-family: $arsenal;
     font-weight: 700;
     text-shadow: 0 4px 14px rgba(0, 0, 0, 0.52);
     color: #fff;
@@ -19,6 +20,7 @@
   }
 
   &.first &_subcaption {
+    font-family: $arsenal;
     margin-top: -0.55em;
     color: #fff;
     text-shadow: 0 4px 16px rgba(0, 0, 0, 0.54);
@@ -29,6 +31,7 @@
   }
   
   &.first &_text {
+    font-family: $helvetica;
     color: #000;
     font-weight: 700;
     letter-spacing: 0.01em;
