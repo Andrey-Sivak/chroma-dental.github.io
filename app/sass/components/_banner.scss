@@ -72,5 +72,9 @@
     font-size: 1.06rem;
     line-height: 1.19em;
     color: #000;
+    
+    @include on-event {
+      text-decoration: none;
+    }
   }
 }
