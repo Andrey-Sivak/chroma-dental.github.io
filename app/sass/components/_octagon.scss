@@ -1,0 +1,84 @@
+.octagon {
+  background-color: #fff;
+  position: relative;
+  width: 100%;
+
+  &_item {
+    position: absolute;
+    background-color: #fff;
+
+    & .corner {
+      position: relative;
+      display: block;
+      height: -webkit-fill-available;
+
+      &:after {
+        position: absolute;
+        content: '';
+        width: 51.5px;
+        height: 24px;
+        background-color: #fff;
+      }
+    }
+  }
+
+  &_top {
+    height: 31px;
+    top: -31px;
+    border-top: 1px solid #6F9890;
+    left: 0;
+    right: 0;
+
+    & .corner:after {
+      transform: rotate(-37deg);
+      top: 12px;
+      left: -39px;
+      border-top: 1px solid #6F9890;
+    }
+  }
+
+  &_bottom {
+    border-bottom: 1px solid #6F9890;
+    left: 0;
+    right: 0;
+    bottom: -31px;
+    height: 31px;
+
+    & .corner:after {
+      border-bottom: 1px solid #6F9890;
+      bottom: 12px;
+      right: -39px;
+      transform: rotate(-37deg);
+    }
+  }
+
+  &_lt {
+    border-left: 1px solid #6F9890;
+    top: 0;
+    bottom: 0;
+    width: 41px;
+    left: -41px;
+
+    & .corner:after {
+      border-bottom: 1px solid #6F9890;
+      left: 1px;
+      bottom: -18px;
+      transform: rotate(37deg);
+    }
+  }
+
+  &_rt {
+    border-right: 1px solid #6F9890;
+    top: 0;
+    bottom: 0;
+    width: 41px;
+    right: -41px;
+
+    & .corner:after {
+      border-top: 1px solid #6F9890;
+      right: 1px;
+      top: -18px;
+      transform: rotate(37deg);
+    }
+  }
+}
