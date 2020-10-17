@@ -793,72 +793,34 @@ body {
       .breadcrumbs_item:not(:last-child):hover, .breadcrumbs_item:not(:last-child):active, .breadcrumbs_item:not(:last-child):focus {
         text-decoration: underline; }
 
-main {
-  margin-top: 70px; }
-
-.first-section {
-  position: relative;
-  padding: 5.8rem 0;
-  background: rgba(111, 152, 144, 0.05);
-  max-width: 71.5vw;
-  width: 100%; }
-  .first-section__text-content {
-    margin-left: 16.6rem; }
-    .first-section__text-content_caption {
-      margin-bottom: 1.33rem;
-      font-weight: 700;
-      font-family: "Roboto";
-      font-size: 3.33rem;
-      line-height: 1.3em;
-      max-width: 320px;
-      text-transform: capitalize; }
-    .first-section__text-content_text {
-      font-size: 1.2rem;
-      line-height: 1.5em;
-      max-width: 435px; }
-  .first-section__photo {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    -webkit-transform: translateY(-50%) translateX(50%);
-        -ms-transform: translateY(-50%) translateX(50%);
-            transform: translateY(-50%) translateX(50%);
-    max-width: calc(670px - 85px);
-    width: auto; }
-    .first-section__photo_wrap img {
-      display: block;
-      height: auto;
-      max-width: 100%; }
-
-.second-section {
-  max-width: 75rem;
-  margin: 72px auto 38px;
-  font-family: "Roboto"; }
-  .second-section__caption {
-    font-size: 3.33rem;
-    line-height: 1.3em;
-    margin-bottom: 22px;
-    font-weight: 700; }
-  .second-section__text {
-    font-weight: 300;
+.why-we {
+  max-width: 1279px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 83.66%;
+  text-align: center;
+  margin-bottom: 110px; }
+  .why-we__logo {
+    max-width: 375px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 3.53rem; }
+    .why-we__logo_img {
+      width: 100%; }
+  .why-we__caption {
+    font-size: 2.53rem;
+    font-family: "Roboto";
+    line-height: 140%;
+    letter-spacing: .01em;
+    font-weight: 700;
+    margin-bottom: 1.67rem; }
+  .why-we__description {
     font-size: 1.2rem;
-    line-height: 1.33em;
-    margin-bottom: 3.33rem; }
-  .second-section blockquote p {
-    font-size: 1.2rem;
-    font-weight: 400;
-    font-style: italic;
-    line-height: 1.33em;
-    margin-bottom: 22px; }
-  .second-section address p {
-    font-size: 2.13rem;
-    text-align: right; }
-
-.third-section {
-  padding-top: 46px;
-  padding-bottom: 117px;
-  position: relative; }
-  .third-section__wrap {
+    line-height: 150%;
+    max-width: 91.8%;
+    margin: 0 auto 4.67rem; }
+  .why-we__reasons {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -879,97 +841,55 @@ main {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-    margin: 38px auto 0;
-    max-width: 1100px; }
-  .third-section__diplomas {
-    max-width: 18.67rem;
     width: 100%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
-    .third-section__diplomas_item {
-      max-width: 100%;
-      max-height: 26rem;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: row;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-flex-wrap: wrap;
-          -ms-flex-wrap: wrap;
-              flex-wrap: wrap;
-      margin-bottom: 10px;
-      padding: 5px; }
-    .third-section__diplomas_img {
-      display: block;
-      max-width: 100%;
-      width: auto;
-      max-height: 100%;
-      box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
-      -webkit-transition: all ease-in-out .3s;
-      transition: all ease-in-out .3s; }
-      .third-section__diplomas_img:hover, .third-section__diplomas_img:active, .third-section__diplomas_img:focus {
-        box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5); }
-  .third-section__text-content {
-    max-width: 44.33rem;
-    margin-top: 35px;
-    font-family: "Roboto"; }
-    .third-section__text-content_caption {
-      font-weight: 700;
-      font-size: 3.33rem;
-      line-height: 150%;
-      margin-bottom: 4.53rem; }
-    .third-section__text-content_text {
-      font-weight: 300;
-      font-size: 1.47rem;
-      line-height: 130.7%;
-      margin-bottom: 1.5rem; }
-  .third-section__bg1-help {
-    position: absolute;
-    background-color: rgba(111, 152, 144, 0.03);
-    top: 0;
-    bottom: 0;
-    width: 28vw; }
-  .third-section__bg2-help {
-    position: absolute;
-    background-color: rgba(111, 152, 144, 0.03);
-    bottom: 0;
-    right: 0;
-    height: 279px;
-    width: 28vw; }
-  .third-section__bg3-help {
-    position: absolute;
-    background-color: rgba(111, 152, 144, 0.03);
-    bottom: 117px;
-    right: 308px;
-    height: 330px;
-    width: 346px; }
+    margin-bottom: 5.67rem; }
+  .why-we__reason {
+    width: 23%; }
+    .why-we__reason_img {
+      max-width: 64px;
+      max-height: 70px;
+      margin: 0 auto; }
+      .why-we__reason_img img {
+        display: block;
+        max-width: 100%;
+        height: 70px; }
+    .why-we__reason_caption {
+      margin-top: 1.2rem;
+      letter-spacing: 0.01em;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 1.07rem;
+      line-height: 1.25em; }
+    .why-we__reason_text {
+      margin-top: .47rem;
+      letter-spacing: 0.02em;
+      line-height: 150.3%;
+      font-size: .93rem; }
+  .why-we__text {
+    max-width: 756px;
+    margin: 0 auto 2.13rem;
+    font-size: .93rem;
+    letter-spacing: .01em;
+    line-height: 140.3%; }
+  .why-we__btn {
+    border-radius: 5px;
+    font-weight: 500;
+    padding: 13px 0;
+    width: 383px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.22em; }
+  .why-we__under-btn {
+    background-color: rgba(111, 152, 144, 0.05);
+    width: 245px;
+    text-align: left;
+    padding: 8px 0 8px 15px;
+    font-size: .8rem;
+    line-height: 1.25em;
+    margin: 1.6rem auto 0; }
+    .why-we__under-btn_caption {
+      font-weight: 600; }
+    .why-we__under-btn_link a {
+      color: #024DBD; }
+      .why-we__under-btn_link a:hover, .why-we__under-btn_link a:active, .why-we__under-btn_link a:focus {
+        text-decoration: underline; }
