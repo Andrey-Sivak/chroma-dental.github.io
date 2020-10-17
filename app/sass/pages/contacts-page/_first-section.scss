@@ -1,0 +1,26 @@
+main {
+  font-family: $roboto;
+}
+
+.first-section {
+  margin-top: 4.2rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  @include flex( $j-c: space-between, $a-i: center );
+
+  &__logo {
+    max-width: 28.87rem;
+    height: auto;
+
+    &_img {
+      max-width: 100%;
+      display: block;
+    }
+  }
+
+  &__caption {
+    font-size: 3.33rem;
+    font-weight: 500;
+    line-height: 150.5%;
+  }
+}

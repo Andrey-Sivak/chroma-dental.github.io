@@ -1,0 +1,205 @@
+.second-section {
+  margin-left: calc( ( 99vw - 81.33rem ) / 2 );
+  margin-bottom: 4.93rem;
+  @include flex;
+
+  & .description-block {
+    max-width: 45.33rem;
+    width: 100%;
+    margin-right: 100px;
+    padding-top: 4rem;
+
+    &__caption {
+      margin-bottom: 2.53rem;
+      font-size: 2.53rem;
+      font-weight: 700;
+      line-height: 1.18em;
+    }
+
+    &__text {
+      font-family: $montserrat;
+      font-size: 1.2rem;
+      letter-spacing: 0.01em;
+      line-height: 140.5%;
+      margin-bottom: 3.33rem;
+    }
+
+    &__btns {
+      @include flex;
+      align-items: stretch;
+      font-family: $montserrat;
+      margin-bottom: 9.66rem;
+
+      &_btn {
+        width: 25.53rem;
+        border-radius: 5px;
+        margin-right: 1.2rem;
+        font-weight: 500;
+        padding: 13px 0;
+        font-size: 1.2rem;
+      }
+
+      &_call {
+        background: rgba(111, 152, 144, 0.05);
+        max-width: 16.33rem;
+        width: 100%;
+        padding: 0 13px;
+        @include flex( $direction: column, $j-c: space-evenly );
+        font-size: .8rem;
+        font-weight: 600;
+        line-height: 1.25em;
+
+        & span {
+          font-weight: 400;
+        }
+
+        & a {
+          color: #024DBD;
+
+          @include on-event {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    &__services {
+      font-weight: 500;
+
+      &_caption {
+        margin-bottom: 3.2rem;
+        font-size: 2.53rem;
+        line-height: 1.18em;
+        font-weight: 500;
+      }
+
+      &_item {
+        @include flex( $a-i: center );
+        margin-bottom: 2.05rem;
+
+        & figure {
+          width: 45px;
+          @include flex-center;
+          margin-right: 1.8rem;
+        }
+
+        & a {
+          color: #000;
+          text-decoration: underline;
+          text-transform: uppercase;
+          font-weight: 500;
+          font-size: 1.87rem;
+          line-height: 1.18em;
+
+          @include on-event {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  & .info-block {
+    width: calc( 100% - 45.33rem - 100px );
+    padding: 5.4rem 2rem 6.93rem;
+    background-color: rgba( color( main-color ), .05 );
+
+    &__caption {
+      max-width: 27.27rem;
+      font-weight: 500;
+      line-height: 150%;
+      font-size: 1.6rem;
+      margin-bottom: 5.13rem;
+    }
+
+    &__numbers {
+      margin-bottom: 5.13rem;
+
+      &_number {
+        padding-left: 35px;
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 150%;
+        margin-bottom: 1rem;
+        background-repeat: no-repeat;
+        background-size: 24px;
+        background-position: center left;
+
+        &:first-of-type {
+          background-image: url("../../../img/contacts-page/phone-icon.svg");
+        }
+
+        &:last-of-type {
+          background-image: url("../../../img/contacts-page/fax-icon.svg");
+        }
+
+        & a {
+          color: #7F6AFF;
+
+          @include on-event {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    &__map {
+      width: 100%;
+      height: 494px;
+      margin-bottom: 8.27rem;
+
+      & iframe {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &__schedule {
+      margin-bottom: 6.73rem;
+
+      &_caption {
+        font-weight: 500;
+        font-size: 2.13rem;
+        line-height: 1.16em;
+        margin-bottom: 1.33rem;
+      }
+
+      &_item {
+        font-size: 1.6rem;
+        line-height: 1.17em;
+        margin-bottom: 1.33rem;
+
+        &:last-of-type {
+          font-weight: 500;
+        }
+      }
+    }
+
+    &__external-links {
+      font-weight: 500;
+
+      &_caption {
+        font-size: 2.13rem;
+        max-width: 360px;
+        line-height: 150%;
+      }
+
+      &_link {
+        color: #7F6AFF;
+        font-size: 1.6rem;
+        display: block;
+        line-height: 170%;
+
+        @include on-event {
+          text-decoration: underline;
+        }
+      }
+
+      &_subcaption {
+        margin-top: 1rem;
+        font-size: 2.13rem;
+        line-height: 170%;
+      }
+    }
+  }
+}
