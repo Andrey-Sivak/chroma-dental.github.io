@@ -99,7 +99,7 @@
       @include transition-ease;
       display: block;
 
-      &:hover {
+      @include on-event {
         background-color: lighten( color( main-color ), 5% );
       }
 
