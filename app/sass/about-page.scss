@@ -1,4 +1,9 @@
 @import "main";
-@import "pages/about_page/first-section";
+
+main {
+  margin-top: 70px;
+}
+
+@import "components/about";
 @import "pages/about_page/second-section";
 @import "pages/about_page/third-section";
