@@ -1,0 +1,118 @@
+.why-we {
+  max-width: 1279px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 83.66%;
+  text-align: center;
+  margin-bottom: 110px;
+
+  &__logo {
+    max-width: 375px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 3.53rem;
+
+    &_img {
+      width: 100%;
+    }
+  }
+
+  &__caption {
+    font-size: 2.53rem;
+    font-family: $roboto;
+    line-height: 140%;
+    letter-spacing: .01em;
+    font-weight: 700;
+    margin-bottom: 1.67rem;
+  }
+
+  &__description {
+    font-size: 1.2rem;
+    line-height: 150%;
+    max-width: 91.8%;
+    margin: 0 auto 4.67rem;
+  }
+
+  &__reasons {
+    @include flex( $j-c: space-between );
+    width: 100%;
+    margin-bottom: 5.67rem;
+  }
+
+  &__reason {
+    width: 23%;
+
+    &_img {
+      $height: 70px;
+      max-width: 64px;
+      max-height: $height;
+      margin: 0 auto;
+
+      & img {
+        display: block;
+        max-width: 100%;
+        height: $height;
+      }
+    }
+
+    &_caption {
+      margin-top: 1.2rem;
+      letter-spacing: 0.01em;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 1.07rem;
+      line-height: 1.25em;
+    }
+
+    &_text {
+      margin-top: .47rem;
+      letter-spacing: 0.02em;
+      line-height: 150.3%;
+      font-size: .93rem;
+    }
+  }
+
+  &__text {
+    max-width: 756px;
+    margin: 0 auto 2.13rem;
+    font-size: .93rem;
+    letter-spacing: .01em;
+    line-height: 140.3%;
+  }
+
+  &__btn {
+    border-radius: 5px;
+    font-weight: 500;
+    padding: 13px 0;
+    width: 383px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.22em;
+  }
+
+  &__under-btn {
+    background-color: rgba(111, 152, 144, 0.05);
+    width: 245px;
+    text-align: left;
+    padding: 8px 0 8px 15px;
+    font-size: .8rem;
+    line-height: 1.25em;
+    margin: 1.6rem auto 0;
+
+    &_caption {
+      font-weight: 600;
+    }
+
+    &_link {
+
+      & a {
+        color: #024DBD;
+
+        @include on-event {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
