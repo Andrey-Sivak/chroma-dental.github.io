@@ -1,0 +1,47 @@
+.form {
+  width: 100%;
+  @include flex( $direction: column );
+  font-family: $montserrat;
+
+  &__label {
+    padding-top: 14px;
+    width: 100%;
+    @include flex( $j-c: space-between );
+    font-size: 1.06rem;
+    color: #9CA5A9;
+    line-height: 1.25em;
+    font-weight: 500;
+    margin-bottom: 2.13rem;
+    cursor: pointer;
+  }
+
+  &__input {
+    margin-top: -14px;
+    padding: 14px 29px;
+    display: block;
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+    background: #FFF;
+    border: 1px solid rgba(69, 78, 81, 0.79);
+    width: 370px;
+
+    &::placeholder {
+      color: #CDD4D6;
+    }
+  }
+
+  & textarea.form__input {
+    height: 121px;
+    resize: none;
+  }
+
+  &__btn {
+    font-family: $montserrat;
+    width: 150px;
+    font-weight: 500;
+    padding: 16px 0;
+    cursor: pointer;
+    letter-spacing: 0.14em;
+  }
+}
