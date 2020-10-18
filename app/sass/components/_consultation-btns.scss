@@ -1,0 +1,38 @@
+.consultation-btns {
+  @include flex( $a-i: stretch );
+  font-family: $montserrat;
+
+  &__btn {
+    width: 383px;
+    border-radius: 5px;
+    margin-right: 1.2rem;
+    padding: 14px 0 12px;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  &__call-block {
+    background-color: rgba( color( main-color ), .05 );
+    max-width: 245px;
+    width: 100%;
+    padding: 8px 13px;
+    font-size: .8rem;
+    line-height: 1.25em;
+
+    &_caption {
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    
+    & a {
+      color: #024DBD;
+      @include on-event {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &.col {
+    flex-direction: column;
+  }
+}

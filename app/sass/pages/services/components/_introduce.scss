@@ -1,0 +1,58 @@
+.introduce {
+  margin-top: 11px;
+  margin-bottom: 106px;
+  font-family: $roboto;
+
+  &__caption {
+    line-height: 150%;
+    font-weight: 700;
+    font-size: 2.53rem;
+    margin-bottom: 3.33rem;
+  }
+
+  &__content {
+    @include flex( $flex-wrap: nowrap );
+
+  }
+
+  &__img {
+    margin-top: 28px;
+    margin-right: 4rem;
+    width: fit-content;
+    padding: 31px 41px;
+  }
+
+  &__text-content {
+
+    &_caption {
+      font-weight: 700;
+      line-height: 197.5%;
+      font-size: 1.6rem;
+    }
+  }
+
+  &__list {
+    margin-bottom: 2.53rem;
+
+    &_item {
+      padding-left: 36px;
+      position: relative;
+      line-height: 197.5%;
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      font-weight: 500;
+
+      &:before {
+        position: absolute;
+        content: '';
+        width: 14px;
+        height: 16px;
+        border: 2px solid #8BBECF;
+        border-radius: 50%;
+        top: 7px;
+        left: 0;
+        background-color: #fff;
+      }
+    }
+  }
+}
