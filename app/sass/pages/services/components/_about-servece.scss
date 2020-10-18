@@ -1,0 +1,78 @@
+.about-service {
+  max-width: 1314px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__wrap {
+    padding-top: 52px;
+  }
+
+  &__img {
+    width: fit-content;
+    clear: left;
+    float: right;
+    margin-left: 54px;
+    margin-bottom: 100px;
+    padding: 31px 41px;
+    position: relative;
+
+    &_bg-block {
+      position: absolute;
+      background-color: rgba(color( main-color ), .05 );
+      top: -52px;
+      bottom: -52px;
+      left: 71px;
+      right: calc( ( 99vw - 1314px ) / -2 );
+    }
+  }
+
+  &__section-caption {
+    font-family: $roboto;
+    margin-bottom: 37px;
+    font-weight: 700;
+    text-align: center;
+    font-size: 2.53rem;
+    line-height: 1.5em;
+  }
+
+  &__text-content {
+    margin-bottom: 3.2rem;
+  }
+
+  &__caption {
+    font-weight: 500;
+    line-height: 150%;
+    font-size: 2.13rem;
+    margin-bottom: 1.6rem;
+  }
+
+  &__text {
+    letter-spacing: 0.01em;
+    line-height: 150.5%;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+
+    & .bold {
+      font-weight: 700;
+    }
+  }
+
+  &__list {
+
+    &_item {
+      padding-left: 16px;
+      position: relative;
+
+      &:before {
+        position: absolute;
+        content: '';
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: #000;
+        left: 0;
+        top: 9px;
+      }
+    }
+  }
+}
