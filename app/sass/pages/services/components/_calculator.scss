@@ -1,0 +1,112 @@
+.calculator {
+  background-color: rgba( color( main-color ), 0.05 );
+  padding: 36px 0 81px;
+  margin-bottom: 102px;
+
+  &__wrap {
+    text-align: center;
+  }
+
+  &__caption {
+    font-family: $roboto;
+    font-weight: 700;
+    font-size: 3.33rem;
+    text-transform: uppercase;
+    line-height: 1.18em;
+    margin-bottom: 10px;
+  }
+
+  &__subcaption {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.21em;
+    margin-bottom: 2.67rem;
+  }
+
+  &__list {
+    max-width: 575px;
+    width: 100%;
+    @include flex( $j-c: space-between );
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__select-age {
+    margin-bottom: 3.33rem;
+
+    &_item {
+      width: 30%;
+      background-color: #C4C4C4;
+      text-align: center;
+      padding: 12px 0;
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: 600;
+      line-height: 1.22em;
+      cursor: pointer;
+      @include transition-ease;
+
+      @include on-event {
+        background-color: rgba(color( main-color ), .7 );
+      }
+
+      &.active {
+        background-color: color( main-color );
+      }
+    }
+  }
+
+  &__block-note {
+    flex: 0 0 100%;
+    text-align: left;
+    color: #414042;
+    font-size: 1.2rem;
+    line-height: 1.22em;
+    margin-bottom: 5px;
+  }
+
+  &__main {
+    margin-bottom: 5.33rem;
+
+    &_item {
+      cursor: pointer;
+      margin-top: 21px;
+      width: 30%;
+      background-color: #fff;
+      padding: 2.4rem 10px 1.67rem;
+      box-shadow: 0 4px 24px rgba(156, 165, 169, 0.2);
+      @include transition-ease;
+      @include on-event {
+        background-color: rgba(color( main-color ), .7 );
+        box-shadow: 0 6px 24px rgba(156, 165, 169, 0.5);
+      }
+
+      &.active {
+        background-color: color( main-color );
+        box-shadow: 0 6px 24px rgba(156, 165, 169, 0.5);
+      }
+
+      &-img {
+        width: 87px;
+        height: 39px;
+        margin: 0 auto 1rem;
+
+        & img {
+          width: 100%;
+          display: block;
+        }
+      }
+    }
+  }
+
+  &__btn {
+    width: 233px;
+    margin: 0 auto;
+    padding: 19px 0 22px;
+    letter-spacing: 0.14em;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.21em;
+  }
+}
