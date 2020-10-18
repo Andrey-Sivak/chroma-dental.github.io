@@ -1,0 +1,76 @@
+.our-team {
+  margin-bottom: 153px;
+
+  &__wrap {
+    width: 100%;
+    @include flex( $j-c: flex-end );
+  }
+
+  &__photo {
+    width: fit-content;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    left: 0;
+  }
+
+  &__content {
+    position: relative;
+    max-width: 1093px;
+    background-color: rgba( color( main-color ), .05 );
+    padding: 118px 80px 122px 273px;
+  }
+
+  &__caption {
+    font-family: $roboto;
+    font-weight: 600;
+    font-size: 2.53rem;
+    line-height: 1.18em;
+    margin-bottom: 1em;
+  }
+
+  &__text {
+    font-size: 1.2rem;
+    line-height: 140.5%;
+    letter-spacing: 0.01em;
+    margin-bottom: 2.22em;
+  }
+
+  &__btn {
+    border-radius: 5px;
+    width: 383px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.22em;
+    padding: 14px 0 12px;
+    margin-bottom: 1.6rem;
+  }
+
+  &__under-btn {
+    background: rgba( color(main-color), 0.05);
+    padding: 8px 15px;
+    max-width: 245px;
+    font-size: .8rem;
+    line-height: 1.25em;
+
+    &.green {
+      color: color(main-color);
+    }
+
+    &_caption {
+      font-weight: 600;
+    }
+
+    &_num {
+      margin-top: 4px;
+
+      & a {
+        color: #024DBD;
+
+        @include on-event {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
