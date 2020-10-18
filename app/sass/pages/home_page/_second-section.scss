@@ -1,52 +1,25 @@
-.second-section {
-  padding-top: 2.6rem;
-  padding-bottom: 2.1rem;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: url("../../../img/home-page/sec-section-bg.png");
-  text-align: center;
-  text-transform: uppercase;
+.home {
 
-  &__wrap {
-    max-width: 61.67rem;
-    margin: 0 auto;
-  }
+  & .covid {
+    background-image: url("../../../img/home-page/sec-section-bg.png");
 
-  &__caption {
-    letter-spacing: 0.02em;
-    font-size: 1.87rem;
-    line-height: 1;
-    margin-bottom: 1rem;
-  }
-
-  &__subcaption {
-    letter-spacing: 0.03em;
-    font-weight: 300;
-    font-size: .93rem;
-    line-height: 1;
-  }
-
-  &__content {
-    margin-top: 2.67rem;
-    font-family: $roboto;
-    @include flex( $j-c: space-between );
-    width: 100%;
-  }
-
-  &__item {
-     max-width: 30%;
-
-    &_caption {
-      margin-bottom: .8rem;
-      font-size: 2.53rem;
-      line-height: 1;
+    &__caption {
+      font-weight: 400;
+      font-size: 1.87rem;
     }
 
-    &_text {
+    &__subcaption {
+      letter-spacing: 0.03em;
       font-weight: 300;
       font-size: .93rem;
-      line-height: 1;
+    }
+
+    &__item {
+
+      &_text {
+        font-weight: 300;
+        font-size: .93rem;
+      }
     }
   }
 }
