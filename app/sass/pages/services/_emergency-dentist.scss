@@ -1,0 +1,183 @@
+.emergency {
+
+  & .breadcrumbs {
+    position: absolute;
+  }
+
+  & .second-section {
+    font-family: $roboto;
+    width: 100%;
+    padding-top: 120px;
+    padding-bottom: 55px;
+    @include flex( $direction: column, $a-i: center );
+    background-size: cover;
+    background-position: center;
+    background-image: url("../../../img/services/emergency-first-sec-bg.jpg");
+
+    &__caption {
+      font-size: 2.53rem;
+      line-height: 150%;
+      font-weight: 700;
+      text-align: center;
+      width: 627px;
+      padding: 2px 0 3px;
+      margin-bottom: 2rem;
+      color: #fff;
+      background-color: #DA2314;
+      text-transform: uppercase;
+    }
+
+    &__subcaption {
+      font-weight: 700;
+      font-size: 2.53rem;
+      line-height: 150.5%;
+      text-align: center;
+      margin-bottom: .3rem;
+      text-transform: capitalize;
+    }
+
+    &__call {
+      line-height: 197.5%;
+      text-align: center;
+      font-size: 2.53rem;
+      font-weight: 700;
+      text-transform: uppercase;
+
+      & a {
+        font-weight: 700;
+        color: #DA2314;
+
+        @include on-event {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    &__form {
+      font-family: $montserrat;
+      font-size: 1.2rem;
+      margin-top: 1.47rem;
+
+      &_head {
+        font-family: $roboto;
+        line-height: 197.5%;
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+
+      &_formgroup {
+        position: relative;
+        width: 370px;
+        margin: 0 auto 2.02rem;
+      }
+
+      &_label {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%) translateX(-109px);
+        left: -27px;
+        display: block;
+        font-weight: 600;
+        cursor: pointer;
+        user-select: none;
+
+        &.checkbox {
+          position: relative;
+          transform: unset;
+          width: fit-content;
+          top: unset;
+          left: unset;
+
+          & .req {
+            position: absolute;
+            top: 50%;
+            right: -22px;
+            transform: translateY(-50%) translateX(100%);
+          }
+
+          & .text {
+            position: absolute;
+            top: unset;
+            bottom: -4px;
+            right: -22px;
+            transform: translateX(100%) translateY(100%);
+            width: 288px;
+            font-size: .93rem;
+            font-weight: 500;
+            
+            & a {
+              color: #000;
+              text-decoration: underline;
+              font-weight: inherit;
+            }
+          }
+        }
+      }
+
+      &_input {
+        border: 1px solid rgba(69, 78, 81, 0.79);
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        background-color: #fff;
+        padding: 14px 29px;
+        display: block;
+        width: 100%;
+
+        &::placeholder {
+          color: #CDD4D6;
+          font-size: 1.07rem;
+        }
+
+        &[type="checkbox"] {
+          display: none;
+
+          &:checked + .second-section__form_input.checkbox:after {
+            position: absolute;
+            content: '';
+            width: 34px;
+            height: 30px;
+            left: 2px;
+            bottom: 3px;
+            background-image: url("../../../img/check.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+          }
+        }
+
+        &.checkbox {
+          position: relative;
+          width: 34px;
+          height: 30px;
+          padding: 0;
+        }
+      }
+
+      &_btn {
+        background-color: #DA2314;
+        width: 272px;
+        text-align: center;
+        border: none;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        font-size: 1.2rem;
+        color: #fff;
+        display: block;
+        margin: 103px auto 0;
+        padding: 24px 0;
+        cursor: pointer;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        @include transition-ease;
+
+        @include on-event {
+          box-shadow: 0 6px 6px rgba(0, 0, 0, 0.5);
+        }
+      }
+    }
+  }
+
+  & .third-section {
+
+  }
+}
