@@ -1,12 +1,11 @@
 @import 'slider/first-slide';
+@import 'slider/second-slide';
+@import 'slider/third-slide';
+@import 'slider/four-slide';
 
 .slider {
   width: 100%;
   position: relative;
-
-  &__wrap {
-    //@include flex();
-  }
 
   &__item {
     height: 48.2rem;
@@ -21,6 +20,7 @@
   }
 
   &__offer {
+    z-index: 2;
     position: absolute;
     right: 13.33rem;
     bottom: -54px;
@@ -51,8 +51,7 @@
   &__dots {
     max-width: 160px;
     width: 100%;
-
-
+    z-index: 2;
     position: absolute;
     @include flex( $a-i: center, $j-c: space-between );
     left: 50%;
@@ -60,30 +59,33 @@
     bottom: 1rem;
   }
 
-  &__dot {
-    background-color: #fff;
-    display: block;
-    width: 14px;
-    height: 14px;
+  & button {
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     cursor: pointer;
+    @include flex-center();
+    @include transition-ease;
+    border: none;
+    padding: 0;
 
-    &-wrap {
-      background-color: transparent;
-      width: 20px;
-      height: 20px;
+    &.active {
+      background-color: color( main-color );
+    }
+
+    @include on-event {
+      outline: none;
+      background-color: color( main-color );
+    }
+
+    & span {
+      background-color: #fff;
+      display: block;
+      width: 14px;
+      height: 14px;
       border-radius: 50%;
       cursor: pointer;
-      @include flex-center();
-      @include transition-ease;
-
-      &.active {
-        background-color: color( main-color );
-      }
-
-      @include on-event {
-        background-color: color( main-color );
-      }
     }
   }
 }

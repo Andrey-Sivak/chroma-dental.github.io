@@ -1,0 +1,51 @@
+.slider__item {
+
+  &.second {
+    background-image: url("../../../../img/home-page/slider/second-slide.jpg");
+  }
+
+  &.second .covid {
+    background-color: unset;
+    background-image: unset;
+    padding-top: 112px;
+    padding-bottom: 0;
+
+    &__wrap {
+      max-width: unset;
+    }
+
+    &__caption {
+      font-weight: 600;
+      letter-spacing: .02em;
+      font-size: 3.13rem;
+      margin-bottom: 2rem;
+    }
+
+    &__subcaption {
+      font-size: 1.6rem;
+      letter-spacing: 0.01em;
+      font-weight: 400;
+      line-height: 140.6%;
+    }
+
+    &__content {
+      margin-top: 6.33rem;
+    }
+
+    &__item {
+      max-width: 32%;
+
+      &_caption {
+        font-weight: 500;
+        font-size: 3.87rem;
+        margin-bottom: .4rem;
+      }
+
+      &_text {
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 143.6%;
+      }
+    }
+  }
+}
