@@ -1292,22 +1292,23 @@ body {
     font-weight: 700;
     line-height: 197.5%;
     font-size: 1.6rem; }
-  .introduce__list {
+  .introduce .bull-list {
     margin-bottom: 2.53rem; }
-    .introduce__list_item {
-      padding-left: 36px;
-      position: relative;
-      line-height: 197.5%;
-      margin-top: 1rem;
-      font-size: 1.2rem;
-      font-weight: 500; }
-      .introduce__list_item:before {
-        position: absolute;
-        content: '';
-        width: 14px;
-        height: 16px;
-        border: 2px solid #8BBECF;
-        border-radius: 50%;
-        top: 7px;
-        left: 0;
-        background-color: #fff; }
+
+.bull-list_item {
+  padding-left: 36px;
+  position: relative;
+  line-height: 197.5%;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500; }
+  .bull-list_item:before {
+    position: absolute;
+    content: '';
+    width: 14px;
+    height: 16px;
+    border: 2px solid #8BBECF;
+    border-radius: 50%;
+    top: 7px;
+    left: 0;
+    background-color: #fff; }
