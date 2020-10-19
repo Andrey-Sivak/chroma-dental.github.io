@@ -1,0 +1,23 @@
+.bull-list {
+
+  &_item {
+    padding-left: 36px;
+    position: relative;
+    line-height: 197.5%;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+
+    &:before {
+      position: absolute;
+      content: '';
+      width: 14px;
+      height: 16px;
+      border: 2px solid #8BBECF;
+      border-radius: 50%;
+      top: 7px;
+      left: 0;
+      background-color: #fff;
+    }
+  }
+}
