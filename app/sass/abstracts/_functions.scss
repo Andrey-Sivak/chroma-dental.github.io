@@ -15,3 +15,11 @@
   @warn "Unknown `#{$key}` in $z-layers.";
   @return null;
 }
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
