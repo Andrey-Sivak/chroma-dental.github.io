@@ -17,3 +17,31 @@
 @import "pages/services/sedation-during-dentistry";
 @import "pages/services/teeth-whitening";
 @import "pages/services/tooth-extraction-without-sedation";
+
+.service {
+
+  &__section-caption{
+    font-family: $roboto;
+    font-size: 2.53rem;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  &__text-block {
+    margin-bottom: 4.73rem;
+  }
+
+  &__caption {
+    font-family: $montserrat;
+    font-weight: 500;
+    font-size: 2.13rem;
+    margin-bottom: 2rem;
+  }
+
+  &__text {
+    font-family: $montserrat;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 3.67rem;
+  }
+}

@@ -1492,3 +1492,76 @@ body {
       transition: all ease-in-out .3s; }
       .emergency .second-section__form_btn:hover, .emergency .second-section__form_btn:active, .emergency .second-section__form_btn:focus {
         box-shadow: 0 6px 6px rgba(0, 0, 0, 0.5); }
+
+.emergency .third-section {
+  margin-top: 82px; }
+  .emergency .third-section__content {
+    margin-top: 1.9rem;
+    margin-left: 9.4vw;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .emergency .third-section__left {
+    margin-top: 32px;
+    width: 46%; }
+  .emergency .third-section__right {
+    padding: 32px 56px 37px 112px;
+    max-width: 50%;
+    width: 100%;
+    background-color: rgba(111, 152, 144, 0.05); }
+    .emergency .third-section__right_address p {
+      max-width: 409px;
+      font-family: "Roboto";
+      font-weight: 500;
+      line-height: 150%;
+      font-size: 1.6rem;
+      margin-bottom: 3.33rem; }
+    .emergency .third-section__right_map {
+      width: 100%; }
+      .emergency .third-section__right_map iframe {
+        width: 100%;
+        height: 494px;
+        margin-bottom: 1rem; }
+    .emergency .third-section__right_img {
+      width: 100%; }
+      .emergency .third-section__right_img img {
+        width: 100%;
+        height: auto; }
+
+.service__section-caption {
+  font-family: "Roboto";
+  font-size: 2.53rem;
+  text-align: center;
+  font-weight: 700; }
+
+.service__text-block {
+  margin-bottom: 4.73rem; }
+
+.service__caption {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 2.13rem;
+  margin-bottom: 2rem; }
+
+.service__text {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-bottom: 3.67rem; }
