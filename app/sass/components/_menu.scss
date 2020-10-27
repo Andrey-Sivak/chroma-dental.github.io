@@ -2,15 +2,29 @@
   @include flex( $j-c:space-between );
   user-select: none;
 
-  &__item {
+  @include response-to(medium) {
+    @include flex( $direction: column, $j-c: center, $a-i: center );
+  }
+
+  & > li {
     font-size: 1rem;
     letter-spacing: .1em;
     line-height: 1.2rem;
     text-transform: uppercase;
 
-    &.active {
+    @include response-to(medium) {
+      transform: translateX(100vw);
+      @include transition-ease;
+      text-align: center;
 
-      & .menu__item_link {
+      &.active {
+        transform: translateX(0);
+      }
+    }
+
+    &.select {
+
+      & > a {
 
         &:before {
           max-width: 100%;
@@ -18,7 +32,7 @@
       }
     }
     
-    &_link {
+    & a {
       color: #000;
       position: relative;
       display: block;
@@ -59,6 +73,14 @@
     top: 50%;
     right: -13px;
     transform: translateY(-50%) rotate(-130.6deg);
+
+    @include response-to(medium) {
+      top: 20px;
+    }
+
+    @include response-to(medium) {
+      right: 65px;
+    }
   }
 
   &:before {
@@ -70,6 +92,14 @@
     top: 50%;
     right: -19px;
     transform: translateY(-50%) rotate(-44.42deg);
+
+    @include response-to(medium) {
+      top: 20px;
+    }
+
+    @include response-to(medium) {
+      right: 58px;
+    }
   }
 
   &:hover &__menu {
@@ -90,11 +120,17 @@
     z-index: 3;
     @include transition-ease;
 
+    @include response-to(medium) {
+      position: relative;
+      text-align: center;
+      left: 0;
+    }
+
     &::-webkit-scrollbar {
       width: 0;
     }
 
-    &_item {
+    & li {
       background-color: color( main-color );
       @include transition-ease;
       display: block;
@@ -108,11 +144,17 @@
       }
     }
 
-    &_link {
+    & a {
       color: #000;
       display: block;
       padding: 10px 5px 10px 10px;
       text-transform: capitalize;
     }
+  }
+}
+
+@for $i from 1 through 5 {
+  .header__menu .menu li:nth-child(#{$i}) {
+    transition-delay: ( $i * .1s ) + 0.15s;
   }
 }

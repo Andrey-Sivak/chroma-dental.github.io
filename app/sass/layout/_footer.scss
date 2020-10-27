@@ -3,13 +3,31 @@
   padding: 27px 0;
   color: #fff;
 
+  @include response-to(large) {
+    padding: 27px 25px;
+  }
+
+  @include response-to(small) {
+    text-align: center;
+    padding: 27px 15px;
+  }
+
   &__content {
     margin-left: 4.5vw;
+
+    @include response-to(large) {
+      margin-left: 0;
+    }
   }
 
   &__header {
     @include flex( $a-i: center );
     margin-bottom: 2rem;
+
+    @include response-to(small) {
+      flex-direction: column;
+      margin-bottom: 0;
+    }
 
     &_logo {
       max-width: 255px;
@@ -18,6 +36,16 @@
 
       @include on-event {
         transform: scale(1.05);
+      }
+
+      @include response-to(large) {
+        max-width: 14rem;
+        margin-right: 2rem;
+      }
+
+      @include response-to(small) {
+        margin-right: 0;
+        margin-bottom: 1rem;
       }
 
       &-img {
@@ -36,6 +64,15 @@
       @include on-event {
         text-decoration: underline;
       }
+
+      @include response-to(large) {
+        margin-right: 2rem;
+      }
+
+      @include response-to(small) {
+        margin-right: 0;
+        margin-bottom: 1rem;
+      }
     }
   }
 
@@ -49,6 +86,18 @@
     text-transform: capitalize;
     margin-right: 5.2rem;
 
+    @include response-to(large) {
+      max-width: 210px;
+      margin-right: 2rem;
+    }
+
+    @include response-to(small) {
+      margin-right: 0;
+      width: 100%;
+      max-width: unset;
+      margin-bottom: .8rem;
+    }
+
     & p {
       margin-bottom: .8rem;
       width: 100%;
@@ -58,16 +107,36 @@
   &__services {
     @include flex;
 
+    @include response-to(small) {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      width: 100%;
+    }
+
     &_caption {
       letter-spacing: 0.1em;
       font-size: 1rem;
       margin-right: 1.6rem;
       text-transform: uppercase;
+
+      @include response-to(small) {
+        margin-bottom: 1rem;
+        margin-right: 0;
+      }
     }
 
     &_wrap {
       max-width: 37rem;
       @include flex();
+
+      @include response-to(small) {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        max-width: 100%;
+        width: 100%;
+      }
     }
 
     &_item {
@@ -82,6 +151,26 @@
         border-right: 1px solid #fff;
         margin-right: 10px;
         padding-right: 10px;
+
+        @include response-to(small) {
+          padding-bottom: 10px;
+          margin-bottom: 10px;
+          margin-right: 0;
+          padding-right: 0;
+          border: none;
+          position: relative;
+
+          &:after {
+            position: absolute;
+            content: '';
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #fff;
+            height: 1px;
+            width: 12px;
+          }
+        }
       }
 
       @include on-event {
@@ -92,9 +181,19 @@
 
   &__links {
     @include flex-center;
+    margin-top: 15px;
+
+    @include response-to(small) {
+      margin-top: 25px;
+    }
 
     &_wrap {
       @include flex();
+
+      @include response-to(small) {
+        flex-direction: column;
+        align-items: center;
+      }
     }
 
     &_link {
@@ -106,6 +205,10 @@
 
       @include on-event {
         text-decoration: none;
+      }
+
+      @include response-to(small) {
+        margin-bottom: 13px;
       }
     }
   }

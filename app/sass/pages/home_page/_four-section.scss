@@ -26,10 +26,16 @@
     &_item {
       width: 30%;
       margin-bottom: 2.2rem;
+      text-align: center;
+
+      &-img-wrap {
+        width: 100%;
+        @include flex-center;
+      }
 
       &-img {
         max-height: 3.2rem;
-        max-width: 2.66rem;
+        width: auto;
       }
 
       &-text {

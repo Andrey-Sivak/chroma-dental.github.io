@@ -5,6 +5,15 @@
   height: 4.3rem;
   @include flex-center();
 
+  @include response-to(large) {
+    padding: 0 25px;
+  }
+
+  @include response-to(small) {
+    padding: 40px 15px 10px;
+    height: unset;
+  }
+
   &__wrap {
     height: 100%;
     width: 100%;
@@ -23,6 +32,10 @@
       transform: scale(1.05);
     }
 
+    @include response-to(large) {
+      max-width: 14rem;
+    }
+
     &_img {
       max-width: 100%;
       height: auto;
@@ -32,7 +45,82 @@
   &__menu {
     max-width: 30rem;
     width: 100%;
+
+    @include response-to(medium) {
+      max-width: unset;
+      left: 0;
+      top: 0;
+      position: absolute;
+      background-color: color(main-color);
+      transform: translateY(-100%);
+      @include transition-ease;
+      overflow: hidden;
+      padding-top: 1rem;
+      height: 100vh;
+    }
+
+    &.active {
+      transform: translateY(0);
+      z-index: 2;
+    }
   }
+
+
+  &-menu__btn {
+    display: none;
+    height: 20px;
+    width: 28px;
+    cursor: pointer;
+    @include transition-ease;
+    z-index: 10;
+    position: relative;
+
+    @include response-to(medium) {
+      display: block;
+    }
+  }
+
+  &-menu__burger {
+    @include pos-absolute(.5rem, 0);
+    width: 28px;
+    height: 3px;
+    background-color: #fff;
+
+    @at-root %burger_pseudo {
+      content: '';
+      position: absolute;
+      height: 3px;
+      background-color: #fff;
+      @include transition-ease;
+    }
+
+    &:before {
+      @extend %burger_pseudo;
+      top: -8px;
+      width: 28px;
+    }
+
+    &:after {
+      @extend %burger_pseudo;
+      width: 20px;
+      top: 8px;
+    }
+
+    &.active {
+      transform: rotate(720deg);
+      background: transparent;
+
+      &:before {
+        transform: rotate(45deg) translate(5px, 8px);
+      }
+
+      &:after {
+        transform: rotate(-45deg) translate(3px, -7px);
+        width: 28px;
+      }
+    }
+  }
+
 
   &__btn {
     background-color: #fff;
@@ -51,6 +139,14 @@
     @include on-event {
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
       text-decoration: underline;
+    }
+
+    @include response-to(large) {
+      padding: 0 13px;
+    }
+
+    @include response-to(medium) {
+      display: none;
     }
   }
 
@@ -85,7 +181,7 @@
           background-color: #000;
 
           @include on-event {
-            background-color: lighten( #000, 25% );
+            background-color: lighten(#000, 25%);
           }
 
           &:not(:last-child) {
