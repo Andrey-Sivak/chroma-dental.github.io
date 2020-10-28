@@ -29,13 +29,6 @@
     max-width: 22rem;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
 
-    @include response-to(large) {
-      right: 1.33rem;
-      max-width: 19rem;
-      padding-left: 2rem;
-      padding-right: 2rem;
-    }
-
     &_text {
       font-size: 2rem;
       font-weight: 500;

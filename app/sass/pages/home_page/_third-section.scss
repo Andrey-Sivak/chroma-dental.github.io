@@ -6,20 +6,12 @@
   background-position: left top;
   position: relative;
 
-  @include response-to(large) {
-    height: 40rem;
-  }
-
   & .banner {
     position: absolute;
     max-width: 40.2rem;
     top: 50%;
     left: 5vw;
     transform: translateY(-50%);
-
-    @include response-to(large) {
-      top: 43%;
-    }
 
     &__wrap {
       padding: 3rem 3.67rem 2.67rem;

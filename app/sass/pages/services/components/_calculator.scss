@@ -35,7 +35,7 @@
     margin-bottom: 3.33rem;
 
     &_item {
-      width: 30%;
+      width: 31%;
       background-color: #C4C4C4;
       text-align: center;
       padding: 12px 0;
@@ -71,7 +71,7 @@
     &_item {
       cursor: pointer;
       margin-top: 21px;
-      width: 30%;
+      width: 31%;
       background-color: #fff;
       padding: 2.4rem 10px 1.67rem;
       box-shadow: 0 4px 24px rgba(156, 165, 169, 0.2);
@@ -79,6 +79,10 @@
       @include on-event {
         background-color: rgba(color( main-color ), .7 );
         box-shadow: 0 6px 24px rgba(156, 165, 169, 0.5);
+      }
+
+      &:nth-of-type(n+10) {
+        width: 48%;
       }
 
       &.active {

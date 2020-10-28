@@ -61,7 +61,7 @@
 
     &.active {
       transform: translateY(0);
-      z-index: 2;
+      z-index: 100;
     }
   }
 
@@ -120,7 +120,6 @@
       }
     }
   }
-
 
   &__btn {
     background-color: #fff;
@@ -181,7 +180,7 @@
           background-color: #000;
 
           @include on-event {
-            background-color: lighten(#000, 25%);
+            background-color: lighten( #000, 25% );
           }
 
           &:not(:last-child) {
@@ -190,6 +189,7 @@
         }
 
         &_link {
+
           color: #ffffff;
         }
       }
