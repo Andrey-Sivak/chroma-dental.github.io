@@ -4,13 +4,27 @@ main {
 
 .first-section {
   position: relative;
-  padding: 5.8rem 0;
-  background: rgba(111, 152, 144, 0.05);
-  max-width: 71.5vw;
-  width: 100%;
+  padding: 10px 0;
+
+  &:before {
+    $offset: calc((99vw - 1280px) / -2);
+    position: absolute;
+    content: '';
+    width: calc(#{$offset} * -1 + 1060px);
+    top: 0;
+    bottom: 0;
+    display: block;
+    left: 0;
+    background-color: rgba(111, 152, 144, 0.05);
+  }
+
+  & .container {
+    width: 100%;
+    @include flex($j-c:space-between, $a-i:center);
+  }
 
   &__text-content {
-    margin-left: 16.6rem;
+    max-width: 60%;
 
     &_caption {
       margin-bottom: 1.33rem;
@@ -18,23 +32,19 @@ main {
       font-family: $roboto;
       font-size: 3.33rem;
       line-height: 1.3em;
-      max-width: 320px;
       text-transform: capitalize;
     }
 
     &_text {
       font-size: 1.2rem;
       line-height: 1.5em;
-      max-width: 435px;
     }
   }
 
   &__photo {
-    position: absolute;
-    right: 0;
+    padding: 31px 41px;
     top: 50%;
-    transform: translateY(-50%) translateX(50%);
-    max-width: calc(670px - 85px);
+    max-width: 35%;
     width: auto;
 
     &_wrap {

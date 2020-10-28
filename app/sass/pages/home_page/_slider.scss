@@ -22,7 +22,7 @@
   &__offer {
     z-index: 2;
     position: absolute;
-    right: 13.33rem;
+    right: calc((100% - 1280px) / 2);
     bottom: -54px;
     background-color: #fff;
     padding: 2.66rem 3.13rem 2rem;

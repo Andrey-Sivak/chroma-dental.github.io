@@ -4,14 +4,16 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left top;
-  position: relative;
+
+  & .container {
+    position: relative;
+    height: 100%;
+  }
 
   & .banner {
     position: absolute;
     max-width: 40.2rem;
-    top: 50%;
-    left: 5vw;
-    transform: translateY(-50%);
+    top: 10%;
 
     &__wrap {
       padding: 3rem 3.67rem 2.67rem;

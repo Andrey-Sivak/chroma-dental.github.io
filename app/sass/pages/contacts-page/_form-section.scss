@@ -1,18 +1,20 @@
 .form-section {
   padding: 57px 0;
-  @include flex( $j-c: flex-end );
-  width: 100%;
   background-image: url("../../../img/contacts-page/form-section-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left bottom;
+
+  & .container {
+    @include flex( $j-c: flex-end );
+    width: 100%;
+  }
 
   &__wrap {
     max-width: 764px;
     width: 100%;
     padding: 64px 180px 74px 157px;
     background-color: #fff;
-    margin-right: 5vw;
   }
 
   &__caption {

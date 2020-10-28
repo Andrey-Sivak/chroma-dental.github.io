@@ -1,5 +1,4 @@
 .second-section {
-  margin-left: calc( (99vw - 81.33rem) / 2 );
   margin-bottom: 4.93rem;
   @include flex;
 
@@ -107,7 +106,18 @@
   & .info-block {
     width: calc( 100% - 45.33rem - 100px );
     padding: 5.4rem 2rem 6.93rem;
-    background-color: rgba( color( main-color ), .05 );
+    position: relative;
+    //background-color: rgba( color( main-color ), .05 );
+
+    &:before {
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 0;
+      bottom: 0;
+      background-color: rgba( color( main-color ), .05 );
+      right: calc(((100vw - 17px) - 1280px) / -2);
+    }
 
     &__caption {
       max-width: 27.27rem;

@@ -6,11 +6,11 @@
   &__wrap {
     @include flex( $j-c: space-between );
     margin: 38px auto 0;
-    max-width: 1100px;
   }
 
   &__diplomas {
-    max-width: 18.67rem;
+    padding: 31px 41px;
+    max-width: 365px;
     width: 100%;
     @include flex( $direction: column, $a-i: center );
 
@@ -61,7 +61,7 @@
     background-color: rgba( color( main-color ), .03 );
     top: 0;
     bottom: 0;
-    width: 28vw;
+    width: calc(((100% - 1280px) / 2) + (365px / 2));
   }
 
   &__bg2-help {
