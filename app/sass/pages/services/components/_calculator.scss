@@ -81,7 +81,7 @@
         box-shadow: 0 6px 24px rgba(156, 165, 169, 0.5);
       }
 
-      &:nth-of-type(n+10) {
+      &.wide {
         width: 48%;
       }
 
@@ -112,5 +112,26 @@
     font-weight: 600;
     font-size: 1.6rem;
     line-height: 1.21em;
+  }
+
+  &.no-image {
+
+    & .calculator__main_item {
+      height: 272px;
+      @include flex-center();
+      padding: 0;
+    }
+
+    & .calculator__list {
+      max-width: 912px;
+    }
+
+    & .calculator__main_item-caption {
+      max-width: 131px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 174.53%;
+    }
   }
 }

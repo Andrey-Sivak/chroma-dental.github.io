@@ -1,6 +1,7 @@
 'use strict';
 
 import { Menu } from "./Menu";
+import { Calculator } from "./calculator";
 
 window.addEventListener('load', function () {
 
@@ -35,5 +36,9 @@ window.addEventListener('load', function () {
         });
 
         menu.init();
+    })();
+
+    (function calculator() {
+        Calculator('calculator');
     })();
 });
