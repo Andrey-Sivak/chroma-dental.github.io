@@ -1458,7 +1458,7 @@ body {
       .calculator__main_item:hover, .calculator__main_item:active, .calculator__main_item:focus {
         background-color: rgba(111, 152, 144, 0.7);
         box-shadow: 0 6px 24px rgba(156, 165, 169, 0.5); }
-      .calculator__main_item:nth-of-type(n+10) {
+      .calculator__main_item.wide {
         width: 48%; }
       .calculator__main_item.active {
         background-color: #6F9890;
@@ -1479,6 +1479,41 @@ body {
     font-weight: 600;
     font-size: 1.6rem;
     line-height: 1.21em; }
+  .calculator.no-image .calculator__main_item {
+    height: 272px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    padding: 0; }
+  .calculator.no-image .calculator__list {
+    max-width: 912px; }
+  .calculator.no-image .calculator__main_item-caption {
+    max-width: 131px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 174.53%; }
+  .calculator__warning {
+    color: red;
+    margin-top: 10px;
+    font-weight: 700; }
 
 .about-service {
   max-width: 1314px;
