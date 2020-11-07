@@ -1,38 +1,40 @@
 .form-section {
-  padding: 57px 0;
+  padding: 64px 0 122px;
   background-image: url("../../../img/contacts-page/form-section-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left bottom;
 
-  & .container {
-    @include flex( $j-c: flex-end );
-    width: 100%;
-  }
-
   &__wrap {
-    max-width: 764px;
+    max-width: 390px;
     width: 100%;
-    padding: 64px 180px 74px 157px;
+    padding: 40px;
     background-color: #fff;
   }
 
   &__caption {
     font-weight: 500;
-    font-size: 2.13rem;
-    line-height: 1.56em;
-    margin-bottom: 1rem;
+    font-size: 28px;
+    line-height: .9em;
+    margin-bottom: 10px;
   }
 
   &__note {
-    font-size: calc(1rem + 1px);
-    line-height: 1.25em;
+    font-size: 14px;
+    line-height: .9em;
     font-family: $montserrat;
-    margin-bottom: 2.67rem;
+    margin-bottom: 2rem;
+  }
+
+  & .form__label {
+    display: block;
+    padding-top: 0;
+    margin-bottom: 16px;
   }
 
   & .form__input {
     width: 309px;
+    margin-top: 6px;
   }
 
   & .form__btn {

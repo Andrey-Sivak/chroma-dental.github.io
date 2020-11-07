@@ -1,23 +1,23 @@
 .second-section {
-  margin-bottom: 4.93rem;
+  margin-top: 2rem;
   @include flex;
 
   & .description-block {
-    max-width: 45.33rem;
+    max-width: 714px;
     width: 100%;
-    margin-right: 100px;
+    margin-right: 88px;
     padding-top: 4rem;
 
     &__caption {
-      margin-bottom: 2.53rem;
-      font-size: 2.53rem;
+      margin-bottom: 1em;
+      font-size: 24px;
       font-weight: 700;
       line-height: 1.18em;
     }
 
     &__text {
       font-family: $montserrat;
-      font-size: 1.2rem;
+      font-size: 14px;
       letter-spacing: 0.01em;
       line-height: 140.5%;
       margin-bottom: 3.33rem;
@@ -27,7 +27,6 @@
       @include flex;
       align-items: stretch;
       font-family: $montserrat;
-      margin-bottom: 9.66rem;
 
       &_btn {
         width: 25.53rem;
@@ -64,22 +63,23 @@
 
     &__services {
       font-weight: 500;
+      margin-top: 87px;
 
       &_caption {
-        margin-bottom: 3.2rem;
-        font-size: 2.53rem;
-        line-height: 1.18em;
-        font-weight: 500;
+        margin-bottom: 47px;
+        font-size: 28px;
+        line-height: 34px;
+        font-weight: 400;
       }
 
       &_item {
         @include flex( $a-i: center );
-        margin-bottom: 2.05rem;
+        margin-bottom: 2rem;
 
         & figure {
-          width: 45px;
+          width: 36px;
           @include flex-center;
-          margin-right: 1.8rem;
+          margin-right: 16px;
 
           & img {
             max-width: 100%;
@@ -92,8 +92,8 @@
           text-decoration: underline;
           text-transform: uppercase;
           font-weight: 500;
-          font-size: 1.87rem;
-          line-height: 1.18em;
+          font-size: 16px;
+          line-height: 19px;
 
           @include on-event {
             text-decoration: none;
@@ -104,36 +104,37 @@
   }
 
   & .info-block {
-    width: calc( 100% - 45.33rem - 100px );
-    padding: 5.4rem 2rem 6.93rem;
+    width: calc( 100% - 714px - 88px );
+    padding: 5.4rem 0 186px 34px;
     position: relative;
-    //background-color: rgba( color( main-color ), .05 );
 
-    &:before {
+    &:after {
+      z-index: 0;
       position: absolute;
       content: '';
       left: 0;
       top: 0;
       bottom: 0;
       background-color: rgba( color( main-color ), .05 );
-      right: calc(((100vw - 17px) - 1280px) / -2);
+      right: calc(((100vw - 17px) - 1120px) / -2);
     }
 
     &__caption {
-      max-width: 27.27rem;
+      max-width: 100%;
       font-weight: 500;
       line-height: 150%;
-      font-size: 1.6rem;
-      margin-bottom: 5.13rem;
+      font-size: 18px;
+      margin-bottom: 50px;
     }
 
     &__numbers {
-      margin-bottom: 5.13rem;
+      position: relative;
+      z-index: 1;
 
       &_number {
         padding-left: 35px;
         font-weight: 500;
-        font-size: 1.6rem;
+        font-size: 18px;
         line-height: 150%;
         margin-bottom: 1rem;
         background-repeat: no-repeat;
@@ -159,9 +160,11 @@
     }
 
     &__map {
+      position: relative;
+      z-index: 1;
       width: 100%;
-      height: 494px;
-      margin-bottom: 8.27rem;
+      height: 220px;
+      margin: 50px 0;
 
       & iframe {
         width: 100%;
@@ -170,42 +173,46 @@
     }
 
     &__schedule {
-      margin-bottom: 6.73rem;
+      margin-bottom: 84px;
 
       &_caption {
         font-weight: 500;
-        font-size: 2.13rem;
-        line-height: 1.16em;
-        margin-bottom: 1.33rem;
+        font-size: 24px;
+        line-height: 1.06em;
+        margin-bottom: 20px;
       }
 
       &_item {
-        font-size: 1.6rem;
-        line-height: 1.17em;
-        margin-bottom: 1.33rem;
+        font-size: 16px;
+        line-height: 1.05em;
+        margin-bottom: 14px;
 
         &-close {
           font-weight: 500;
+          font-size: 20px;
+          margin-top: 18px;
         }
       }
     }
 
     &__external-links {
+      position: relative;
+      z-index: 1;
       margin-bottom: 2rem;
 
       &_caption {
-        font-size: 2.13rem;
-        max-width: 360px;
+        font-size: 18px;
         line-height: 150%;
         font-weight: 500;
       }
 
       &_link {
         color: #7F6AFF;
-        font-size: 1.6rem;
-        display: block;
+        font-size: 16px;
+        display: inline-block;
         line-height: 170%;
         font-weight: 500;
+        margin-right: 10px;
 
         @include on-event {
           text-decoration: underline;
@@ -213,8 +220,9 @@
       }
 
       &_subcaption {
+        font-weight: 500;
         margin-top: 1rem;
-        font-size: 2.13rem;
+        font-size: 18px;
         line-height: 170%;
       }
     }
