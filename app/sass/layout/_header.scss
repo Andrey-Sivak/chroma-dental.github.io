@@ -22,7 +22,7 @@
 
   &__logo {
     display: block;
-    max-width: 16.73rem;
+    max-width: 235px;
     max-height: 2.8rem;
     width: 100%;
     height: auto;
@@ -122,13 +122,15 @@
   }
 
   &__btn {
+    width: 268px;
+    text-align: center;
     background-color: #fff;
     height: 100%;
     @include flex-center();
     padding: 0 21px;
     text-transform: uppercase;
-    font-size: .8rem;
-    line-height: 1rem;
+    font-size: 14px;
+    line-height: 17px;
     letter-spacing: 0.08em;
     font-weight: 500;
     color: #000;
@@ -146,53 +148,6 @@
 
     @include response-to(medium) {
       display: none;
-    }
-  }
-
-  &.black {
-    background-color: #000;
-    
-    & .menu {
-      
-      &__item_link {
-        color: #fff;
-
-        &:before {
-          background-color: #fff;
-        }
-      }
-    }
-
-    & .header__btn {
-      background-color: #8BBECF;
-    }
-
-    & .drop {
-
-      &:after,
-      &:before {
-        background-color: #fff;
-      }
-
-      &__menu {
-
-        &_item {
-          background-color: #000;
-
-          @include on-event {
-            background-color: lighten( #000, 25% );
-          }
-
-          &:not(:last-child) {
-            border-bottom: 1px solid #fff;
-          }
-        }
-
-        &_link {
-
-          color: #ffffff;
-        }
-      }
     }
   }
 }
