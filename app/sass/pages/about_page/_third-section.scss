@@ -1,16 +1,17 @@
 .third-section {
-  padding-top: 46px;
+  padding-top: 52px;
   padding-bottom: 117px;
   position: relative;
 
   &__wrap {
-    @include flex( $j-c: space-between );
-    margin: 38px auto 0;
+    @include flex;
+    margin: 0 auto;
   }
 
   &__diplomas {
+    margin-right: 80px;
     padding: 31px 41px;
-    max-width: 365px;
+    max-width: 268px;
     width: 100%;
     @include flex( $direction: column, $a-i: center );
 
@@ -37,20 +38,20 @@
   }
 
   &__text-content {
-    max-width: 44.33rem;
-    margin-top: 35px;
+    max-width: 514px;
+    margin-top: 30px;
     font-family: $roboto;
 
     &_caption {
       font-weight: 700;
-      font-size: 3.33rem;
+      font-size: 38px;
       line-height: 150%;
-      margin-bottom: 4.53rem;
+      margin-bottom: 25px;
     }
 
     &_text {
       font-weight: 300;
-      font-size: 1.47rem;
+      font-size: 16px;
       line-height: 130.7%;
       margin-bottom: 1.5rem;
     }

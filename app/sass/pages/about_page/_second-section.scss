@@ -1,31 +1,31 @@
 .second-section {
-  margin: 72px 0 38px;
+  margin: 72px 0 85px;
   font-family: $roboto;
 
   &__caption {
-    font-size: 3.33rem;
+    font-size: 38px;
     line-height: 1.3em;
-    margin-bottom: 22px;
+    margin-bottom: 19px;
     font-weight: 700;
   }
 
   &__text {
     font-weight: 300;
-    font-size: 1.2rem;
+    font-size: 14px;
     line-height: 1.33em;
-    margin-bottom: 3.33rem;
+    margin-bottom: 2rem;
   }
   
   & blockquote p {
-    font-size: 1.2rem;
+    font-size: 14px;
     font-weight: 400;
     font-style: italic;
     line-height: 1.33em;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
   }
 
   & address p {
-    font-size: 2.13rem;
+    font-size: 24px;
     text-align: right;
   }
 }

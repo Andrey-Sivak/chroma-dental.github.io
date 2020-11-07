@@ -1,16 +1,12 @@
-main {
-  margin-top: 70px;
-}
-
 .first-section {
   position: relative;
-  padding: 10px 0;
+  padding: 25px 0;
 
   &:before {
-    $offset: calc((99vw - 1280px) / -2);
+    $offset: calc((99vw - 1120px) / -2);
     position: absolute;
     content: '';
-    width: calc(#{$offset} * -1 + 1060px);
+    width: calc(#{$offset} * -1 + 900px);
     top: 0;
     bottom: 0;
     display: block;
@@ -20,30 +16,31 @@ main {
 
   & .container {
     width: 100%;
-    @include flex($j-c:space-between, $a-i:center);
+    @include flex($j-c:space-between);
   }
 
   &__text-content {
-    max-width: 60%;
+    margin-top: 47px;
+    max-width: 456px;
 
     &_caption {
-      margin-bottom: 1.33rem;
+      margin-bottom: 24px;
       font-weight: 700;
       font-family: $roboto;
-      font-size: 3.33rem;
+      font-size: 32px;
       line-height: 1.3em;
       text-transform: capitalize;
     }
 
     &_text {
-      font-size: 1.2rem;
+      font-size: 14px;
       line-height: 1.5em;
     }
   }
 
   &__photo {
     padding: 31px 41px;
-    top: 50%;
+    margin-right: 194px;
     max-width: 35%;
     width: auto;
 
