@@ -2,6 +2,7 @@
 
 import { Menu } from "./Menu";
 import { Calculator } from "./calculator";
+import { Validation } from "./validationClass";
 
 window.addEventListener('load', function () {
 
@@ -40,5 +41,34 @@ window.addEventListener('load', function () {
 
     (function calculator() {
         Calculator('calculator');
+    })();
+
+    (function validation() {
+        const form = document.querySelector('#form-page__form');
+        if( !form ) {
+            return;
+        }
+
+        const valid = new Validation({
+            submitBtn: 'form-page__form_btn',
+            firstName: 'first-name',
+            lastName: 'last-name',
+            phone: 'phone',
+        });
+
+        valid.init();
+
+        addCalculatorData();
+
+        function addCalculatorData() {
+            const ageInput = form.querySelector('#age');
+            const problemInput = form.querySelector('#problem');
+
+            const ageValue = localStorage.getItem('age');
+            const problemValue = localStorage.getItem('problem');
+
+            ageInput.value = ageValue;
+            problemInput.value = problemValue;
+        }
     })();
 });

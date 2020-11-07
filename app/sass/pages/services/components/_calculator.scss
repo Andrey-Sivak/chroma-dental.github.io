@@ -134,4 +134,10 @@
       line-height: 174.53%;
     }
   }
+
+  &__warning  {
+    color: red;
+    margin-top: 10px;
+    font-weight: 700;
+  }
 }
