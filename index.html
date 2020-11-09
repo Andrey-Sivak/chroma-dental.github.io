@@ -15,6 +15,21 @@
 
   <title>Chroma dental</title>
   <link rel="stylesheet" type="text/css" href="dist/css/home-page.min.css">
+  <script src="dist/libs/wow.js"></script>
+  <script>
+
+      //- new WOW().init();
+
+      wow = new WOW({
+          boxClass: 'wow',
+          animateClass: 'animated',
+          offset: 0,
+          mobile: false,
+          live: true
+      });
+      wow.init();
+
+  </script>
   <script src="dist/js/main.js"></script>
 </head>
 <body>
@@ -142,7 +157,7 @@
             </div>
           </div>
           </div>
-          <div class="slider__offer">
+          <div class="slider__offer wow animate__fadeInLeftBig" data-wow-offset="10" data-wow-duration="1s">
               <p class="slider__offer_text">Plan Your Visit Now</p>
               <a href="#" class="btn slider__offer_btn">book an appointment</a>
           </div>
@@ -172,7 +187,7 @@
 
     <section class="third-section">
       <div class="container">
-        <div class="banner">
+        <div class="banner wow animate__fadeInLeftBig" data-wow-offset="10" data-wow-duration="1s">
           <div class="banner__wrap">
             <span class="banner__rt-top corner"></span>
             <span class="banner__lt-top corner"></span>
@@ -188,7 +203,7 @@
 
     <section class="four-section">
       <div class="container">
-        <div class="banner">
+        <div class="banner wow animate__fadeInRightBig" data-wow-offset="10" data-wow-duration="1s">
           <div class="banner__wrap">
             <span class="banner__rt-top corner"></span>
             <span class="banner__lt-top corner"></span>
