@@ -1,0 +1,40 @@
+.cosmetic-dentistry {
+
+  & .first-section {
+    margin-top: -96px;
+    padding-top: 180px;
+    padding-bottom: 138px;
+    text-align: center;
+    background-image: url("../../../img/services/cosmetic-dentistry-bg.jpg");
+    background-size: cover;
+    background-position: center;
+
+    &__caption {
+      width: fit-content;
+      margin: 0 auto 58px;
+      font-size: 32px;
+      line-height: 150.5%;
+      font-weight: 700;
+      color: #fff;
+      background-color: color( main-color );
+      padding: 3px 30px;
+    }
+
+    &__text {
+      font-size: 24px;
+      line-height: 150.5%;
+      font-weight: 600;
+      margin-bottom: 93px;
+    }
+
+    & .consultation-btns {
+      margin: 0 auto;
+      width: fit-content;
+      flex-wrap: nowrap;
+
+      &__call-block {
+        background-color: #fff;
+      }
+    }
+  }
+}

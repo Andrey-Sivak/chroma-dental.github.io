@@ -1,10 +1,8 @@
 .why-we {
+  margin: 100px auto 110px;
   max-width: 1279px;
-  margin-left: auto;
-  margin-right: auto;
   width: 83.66%;
   text-align: center;
-  margin-bottom: 110px;
 
   &__logo {
     max-width: 375px;
@@ -114,6 +112,17 @@
           text-decoration: underline;
         }
       }
+    }
+  }
+
+  & .consultation-btns {
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    align-items: center;
+
+    &__call-block {
+      margin-top: 24px;
     }
   }
 }

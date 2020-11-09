@@ -73,4 +73,12 @@
       }
     }
   }
+
+  & .consultation-btns {
+    flex-direction: column;
+
+    &__call-block {
+      margin-top: 24px;
+    }
+  }
 }

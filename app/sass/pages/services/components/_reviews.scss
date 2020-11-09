@@ -95,4 +95,14 @@
       }
     }
   }
+
+  & .consultation-btns {
+    flex-direction: column;
+
+    &__call-block {
+      width: 383px;
+      margin-top: 24px;
+      max-width: unset;
+    }
+  }
 }
