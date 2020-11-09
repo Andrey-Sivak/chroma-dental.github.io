@@ -3,6 +3,10 @@
   &.four {
     display: flex;
 
+    @include response-to(small) {
+      flex-direction: column;
+    }
+
     & .map {
       flex-basis: 75%;
       background-image: url("../../../../img/home-page/slider/four-slide-bg.svg");
@@ -10,6 +14,12 @@
       background-size: cover;
       position: relative;
       height: 100%;
+
+      @include response-to(small) {
+        order: 2;
+        flex-basis: unset;
+        width: 100%;
+      }
 
       & > address {
         position: absolute;
@@ -23,6 +33,18 @@
         font-size: 32px;
         line-height: 37px;
         padding: 17px 25px 12px;
+
+        @include response-to(medium) {
+          font-size: 18px;
+        }
+
+        @include response-to(small) {
+          background-color: unset;
+          font-size: 16px;
+          max-width: 60%;
+          line-height: 1;
+          text-align: right;
+        }
       }
 
       & .subway {
@@ -32,6 +54,12 @@
         left: 20px;
         font-family: $roboto;
         font-size: 30px;
+
+        @include response-to(small) {
+          bottom: 30px;
+          left: 50px;
+          font-size: 16px;
+        }
 
         &__caption   {
           margin-bottom: 10px;
@@ -59,11 +87,27 @@
       display: flex;
       flex-direction: column;
 
+      @include response-to(medium) {
+        width: 15%;
+        min-width: unset;
+      }
+
+      @include response-to(small) {
+        order: 1;
+        flex-basis: unset;
+        width: 100%;
+      }
+
       .place {
         flex: 0 0 calc(100% / 3);
         background-size: cover;
         background-position: center;
         padding: 14px 20px;
+
+        @include response-to(small) {
+          height: 246px;
+          flex: unset;
+        }
 
         &:first-of-type {
           background-image: url("../../../../img/home-page/slider/1.jpg");
@@ -75,10 +119,14 @@
 
         &:last-of-type {
           background-image: url("../../../../img/home-page/slider/3.jpg");
+
+          @include response-to(small) {
+            display: none;
+          }
         }
 
         &__caption {
-          min-width: 322px;
+          max-width: 322px;
           text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
           color: #fff;
           font-weight: 800;

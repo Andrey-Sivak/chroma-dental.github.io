@@ -15,6 +15,10 @@
 main {
   padding-top: 96px;
 
+  @include response-to(medium) {
+    padding-top: 65px;
+  }
+
   &.home {
     padding-top: 0;
   }

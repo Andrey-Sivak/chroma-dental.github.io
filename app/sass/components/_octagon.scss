@@ -15,24 +15,24 @@
       &:after {
         position: absolute;
         content: '';
-        width: 51.5px;
-        height: 24px;
+        width: 39.5px;
+        height: 18px;
         background-color: #fff;
       }
     }
   }
 
   &_top {
-    height: 31px;
-    top: -31px;
+    height: 26px;
+    top: -26px;
     border-top: 1px solid #6F9890;
     left: 0;
     right: 0;
 
     & .corner:after {
-      transform: rotate(-37deg);
-      top: 12px;
-      left: -39px;
+      transform: rotate(-40deg);
+      top: 10px;
+      left: -28px;
       border-top: 1px solid #6F9890;
     }
   }
@@ -41,14 +41,14 @@
     border-bottom: 1px solid #6F9890;
     left: 0;
     right: 0;
-    bottom: -31px;
-    height: 31px;
+    bottom: -26px;
+    height: 26px;
 
     & .corner:after {
       border-bottom: 1px solid #6F9890;
-      bottom: 12px;
-      right: -39px;
-      transform: rotate(-37deg);
+      bottom: 10px;
+      right: -28px;
+      transform: rotate(-40deg);
     }
   }
 
@@ -56,14 +56,14 @@
     border-left: 1px solid #6F9890;
     top: 0;
     bottom: 0;
-    width: 41px;
-    left: -41px;
+    width: 30px;
+    left: -30px;
 
     & .corner:after {
       border-bottom: 1px solid #6F9890;
       left: 1px;
-      bottom: -18px;
-      transform: rotate(37deg);
+      bottom: -16px;
+      transform: rotate(40deg);
     }
   }
 
@@ -71,14 +71,14 @@
     border-right: 1px solid #6F9890;
     top: 0;
     bottom: 0;
-    width: 41px;
-    right: -41px;
+    width: 30px;
+    right: -30px;
 
     & .corner:after {
       border-top: 1px solid #6F9890;
-      right: 1px;
-      top: -18px;
-      transform: rotate(37deg);
+      right: 2px;
+      top: -16px;
+      transform: rotate(40deg);
     }
   }
 }

@@ -2,6 +2,10 @@
   position: relative;
   padding: 25px 0;
 
+  @include response-to(medium) {
+    padding: 0;
+  }
+
   &:before {
     $offset: calc((99vw - 1120px) / -2);
     position: absolute;
@@ -12,6 +16,10 @@
     display: block;
     left: 0;
     background-color: rgba(111, 152, 144, 0.05);
+
+    @include response-to(medium) {
+      width: 100%;
+    }
   }
 
   & .container {
@@ -23,6 +31,11 @@
     margin-top: 47px;
     max-width: 456px;
 
+    @include response-to(medium) {
+      order: 2;
+      margin-top: 34px;
+    }
+
     &_caption {
       margin-bottom: 24px;
       font-weight: 700;
@@ -30,19 +43,39 @@
       font-size: 32px;
       line-height: 1.3em;
       text-transform: capitalize;
+
+      @include response-to(medium) {
+        font-size: 28px;
+        margin-bottom: 36px;
+      }
     }
 
     &_text {
       font-size: 14px;
       line-height: 1.5em;
+
+      @include response-to(medium) {
+        font-size: 16px;
+      }
     }
   }
 
   &__photo {
-    padding: 31px 41px;
+    padding: 25px 29px;
     margin-right: 194px;
     max-width: 35%;
     width: auto;
+
+    @include response-to(large) {
+      max-width: 30%;
+    }
+
+    @include response-to(medium) {
+      order: 1;
+      max-width: 250px;
+      width: 100%;
+      margin: 0 auto;
+    }
 
     &_wrap {
 

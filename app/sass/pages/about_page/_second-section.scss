@@ -2,11 +2,20 @@
   margin: 72px 0 85px;
   font-family: $roboto;
 
+  @include response-to(medium) {
+    margin: 55px 0 70px;
+  }
+
   &__caption {
     font-size: 38px;
     line-height: 1.3em;
     margin-bottom: 19px;
     font-weight: 700;
+
+    @include response-to(medium) {
+      font-size: 28px;
+      margin-bottom: 36px;
+    }
   }
 
   &__text {
@@ -14,6 +23,11 @@
     font-size: 14px;
     line-height: 1.33em;
     margin-bottom: 2rem;
+
+    @include response-to(medium) {
+      font-size: 18px;
+      margin-bottom: 22px;
+    }
   }
   
   & blockquote p {
@@ -22,10 +36,19 @@
     font-style: italic;
     line-height: 1.33em;
     margin-bottom: 20px;
+
+    @include response-to(medium) {
+      font-size: 18px;
+      margin-bottom: 16px;
+    }
   }
 
   & address p {
     font-size: 24px;
     text-align: right;
+
+    @include response-to(medium) {
+      font-size: 20px;
+    }
   }
 }
