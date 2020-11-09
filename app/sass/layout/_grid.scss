@@ -6,6 +6,10 @@
   @include response-to(large) {
     padding: 0 25px;
   }
+
+  @include response-to(small) {
+    padding: 0 15px;
+  }
 }
 
 main {

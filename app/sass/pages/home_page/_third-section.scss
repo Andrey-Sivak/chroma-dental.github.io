@@ -5,6 +5,12 @@
   background-size: cover;
   background-position: left bottom;
 
+  @include response-to(small) {
+    height: 650px;
+    background-size: contain;
+    background-position: top;
+  }
+
   & .container {
     position: relative;
     height: 100%;
@@ -14,18 +20,54 @@
     position: absolute;
     max-width: 545px;
     top: 154px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+
+    @include response-to(small) {
+      position: relative;
+      left: -15px;
+      max-width: 85vw;
+    }
 
     &__wrap {
       padding: 37px 28px 37px 35px;
+
+      @include response-to(small) {
+        padding-left: 0;
+        border-left: none;
+      }
+
+      & .banner__lt-top {
+
+        @include response-to(small) {
+          transform: unset;
+          top: -1px;
+        }
+      }
+
+      & .banner__lt-bottom {
+
+        @include response-to(small) {
+          transform: unset;
+          bottom: -23px;
+        }
+      }
     }
 
     &__caption {
       max-width: 246px;
       margin-bottom: 16px;
+
+      @include response-to(small) {
+        font-size: 25px;
+      }
     }
 
     &__text {
       margin-bottom: 16px;
+
+      @include response-to(small) {
+        font-size: 14px;
+      }
     }
   }
 }

@@ -5,12 +5,34 @@
   background-size: cover;
   background-position: center;
 
+  @include response-to(small) {
+    padding: 0;
+  }
+
   & .banner {
     max-width: 915px;
     margin-left: auto;
 
+    @include response-to(small) {
+      background-color: rgba(#fff, .9);
+      margin: 0 -15px;
+      padding: 40px 15px;
+    }
+
     &__wrap {
       padding: 35px 25px 35px 50px;
+
+      @include response-to(small) {
+        border: none;
+        padding: 0;
+      }
+
+      & .corner {
+
+        @include response-to(small) {
+          display: none;
+        }
+      }
     }
 
     &__caption {
@@ -23,11 +45,20 @@
     @include flex( $j-c: space-between );
     margin-top: 35px;
 
+    @include response-to(small) {
+      flex-wrap: wrap;
+    }
+
     &_item {
       width: 47%;
       margin-bottom: 2rem;
       display: flex;
       align-items: center;
+
+      @include response-to(small) {
+        width: 100%;
+        margin-bottom: 24px;
+      }
 
       &-img-wrap {
         width: 36px;
@@ -38,6 +69,7 @@
       &-img {
         max-height: 3.2rem;
         width: auto;
+        max-width: 100%;
       }
 
       &-text {
@@ -49,6 +81,10 @@
         font-size: 16px;
         line-height: 19px;
         cursor: pointer;
+
+        @include response-to(small) {
+          font-size: 14px;
+        }
 
 
         @include on-event {

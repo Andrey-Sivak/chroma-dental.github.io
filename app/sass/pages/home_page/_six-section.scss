@@ -3,9 +3,17 @@
   text-align: center;
   line-height: 1;
 
+  @include response-to(small) {
+    padding: 50px 0;
+  }
+
   &__caption {
     font-size: 3.2rem;
     margin-bottom: 2rem;
+
+    @include response-to(small) {
+      font-size: 32px;
+    }
 
     &:not(:first-of-type) {
       margin-top: 2.67rem;
@@ -20,6 +28,10 @@
   &__text {
     font-size: 1.33rem;
     line-height: 1.2em;
+
+    @include response-to(small) {
+      font-size: 18px;
+    }
   }
 
   &__btn {
