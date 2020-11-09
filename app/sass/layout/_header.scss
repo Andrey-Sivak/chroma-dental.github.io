@@ -5,12 +5,8 @@
   height: 4.3rem;
   @include flex-center();
 
-  @include response-to(large) {
-    padding: 0 25px;
-  }
-
   @include response-to(small) {
-    padding: 40px 15px 10px;
+    padding: 40px 0 10px;
     height: unset;
   }
 
