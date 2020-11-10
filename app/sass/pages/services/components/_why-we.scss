@@ -1,6 +1,5 @@
 .why-we {
   margin: 100px auto 110px;
-  max-width: 1279px;
   width: 83.66%;
   text-align: center;
 
@@ -17,12 +16,12 @@
   }
 
   &__caption {
-    font-size: 2.53rem;
+    font-size: 28px;
     font-family: $roboto;
     line-height: 140%;
     letter-spacing: .01em;
     font-weight: 700;
-    margin-bottom: 1.67rem;
+    margin-bottom: 25px;
   }
 
   &__description {

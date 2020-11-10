@@ -1,5 +1,4 @@
 .about-service {
-  max-width: 1314px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 100px;
@@ -24,7 +23,7 @@
       top: -52px;
       bottom: -52px;
       left: 71px;
-      right: calc( ( 100vw - 1331px ) / -2 );
+      right: calc((100vw - 1137px) / -2);
     }
   }
 
@@ -33,7 +32,7 @@
     margin-bottom: 37px;
     font-weight: 700;
     text-align: center;
-    font-size: 2.53rem;
+    font-size: 28px;
     line-height: 1.5em;
   }
 
@@ -44,14 +43,14 @@
   &__caption {
     font-weight: 500;
     line-height: 150%;
-    font-size: 2.13rem;
-    margin-bottom: 1.6rem;
+    font-size: 22px;
+    margin-bottom: 19px;
   }
 
   &__text {
     letter-spacing: 0.01em;
     line-height: 150.5%;
-    font-size: 1.2rem;
+    font-size: 16px;
     margin-bottom: 1rem;
 
     & .bold {

@@ -6,8 +6,8 @@
   &__caption {
     line-height: 150%;
     font-weight: 700;
-    font-size: 2.53rem;
-    margin-bottom: 3.33rem;
+    font-size: 28px;
+    margin-bottom: 30px;
   }
 
   &__content {
@@ -22,12 +22,22 @@
     padding: 31px 41px;
   }
 
+  &__photo_wrap {
+
+    & > img {
+      max-height: 412px;
+      max-width: 430px;
+      height: auto;
+      width: auto;
+    }
+  }
+
   &__text-content {
 
     &_caption {
       font-weight: 700;
       line-height: 197.5%;
-      font-size: 1.6rem;
+      font-size: 18px;
     }
   }
 

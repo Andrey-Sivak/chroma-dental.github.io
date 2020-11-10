@@ -1,5 +1,4 @@
 .service .reviews {
-  max-width: 1320px;
   width: 100%;
   margin: 0 auto;
 }
@@ -11,11 +10,11 @@
 
     .review__img {
       order: 2;
-      margin-left: 65px;
+      margin-left: 45px;
 
       &:before {
-        left: -65px;
-        right: calc((99vw - 1320px) / -2);
+        left: 65px;
+        right: calc((100vw - 1137px) / -2);
       }
     }
   }
@@ -23,11 +22,11 @@
   &:nth-child(odd) {
 
     .review__img {
-      margin-right: 65px;
+      margin-right: 45px;
 
       &:before {
-        right: -65px;
-        left: calc((99vw - 1320px) / -2);
+        right: 65px;
+        left: calc((100vw - 1137px) / -2);
       }
     }
   }
@@ -37,7 +36,7 @@
     margin: 0 auto 75px;
     font-weight: 700;
     text-align: center;
-    font-size: 2.53rem;
+    font-size: 28px;
     line-height: 118%;
   }
 
@@ -47,12 +46,12 @@
   }
 
   &__text-block {
-    max-width: 670px;
+    max-width: 610px;
 
     &_caption {
       margin-bottom: 1.7rem;
       font-family: $roboto;
-      font-size: 2.13rem;
+      font-size: 28px;
       line-height: 150%;
 
       & > a {
@@ -100,7 +99,7 @@
     flex-direction: column;
 
     &__call-block {
-      width: 383px;
+      width: 312px;
       margin-top: 24px;
       max-width: unset;
     }

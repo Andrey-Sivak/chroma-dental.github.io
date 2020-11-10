@@ -2,7 +2,6 @@
   @include flex;
 
   @include response-to(medium) {
-    margin-top: 50px;
     flex-direction: column;
   }
 
@@ -11,6 +10,10 @@
     font-size: 32px;
     line-height: 150.5%;
     margin-bottom: 31px;
+
+    @include response-to(medium) {
+      font-size: 28px;
+    }
   }
 
   & .description-block {

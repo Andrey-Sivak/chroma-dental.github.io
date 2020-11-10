@@ -1,6 +1,6 @@
 .calculator {
   background-color: rgba( color( main-color ), 0.05 );
-  padding: 36px 0 81px;
+  padding: 42px 0 57px;
   margin-bottom: 102px;
 
   &__wrap {
@@ -10,15 +10,15 @@
   &__caption {
     font-family: $roboto;
     font-weight: 700;
-    font-size: 3.33rem;
+    font-size: 38px;
     text-transform: uppercase;
     line-height: 1.18em;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 
   &__subcaption {
     font-weight: 500;
-    font-size: 1.6rem;
+    font-size: 24px;
     line-height: 1.21em;
     margin-bottom: 2.67rem;
   }
@@ -40,7 +40,7 @@
       text-align: center;
       padding: 12px 0;
       color: #fff;
-      font-size: 1.2rem;
+      font-size: 16px;
       font-weight: 600;
       line-height: 1.22em;
       cursor: pointer;

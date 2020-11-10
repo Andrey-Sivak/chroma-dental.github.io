@@ -27,26 +27,29 @@
 
   &__section-caption{
     font-family: $roboto;
-    font-size: 2.53rem;
+    font-size: 28px;
+    line-height: 1.5;
     text-align: center;
     font-weight: 700;
   }
 
   &__text-block {
-    margin-bottom: 4.73rem;
+    margin-bottom: 56px;
   }
 
   &__caption {
     font-family: $montserrat;
     font-weight: 500;
-    font-size: 2.13rem;
-    margin-bottom: 2rem;
+    font-size: 24px;
+    margin-bottom: 1rem;
+    line-height: 150.5%;
   }
 
   &__text {
     font-family: $montserrat;
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 16px;
+    line-height: 150.5%;
     margin-bottom: 3.67rem;
   }
 }
